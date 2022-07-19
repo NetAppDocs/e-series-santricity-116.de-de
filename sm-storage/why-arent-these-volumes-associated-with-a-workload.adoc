@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/why-arent-these-volumes-associated-with-a-workload.html 
+sidebar: sidebar 
+keywords: volumes, associate, workload, create, use, command line, interface, migrate, import, export, different, storage, array 
+summary: 'Volumes sind keinem Workload zugeordnet, wenn sie mithilfe der Befehlszeilenschnittstelle (CLI) erstellt wurden oder aus einem anderen Storage-Array migriert (importiert/exportiert) wurden.' 
+---
+= Warum sind diese Volumen nicht mit einem Workload verbunden?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volumes sind keinem Workload zugeordnet, wenn sie mithilfe der Befehlszeilenschnittstelle (CLI) erstellt wurden oder aus einem anderen Storage-Array migriert (importiert/exportiert) wurden.

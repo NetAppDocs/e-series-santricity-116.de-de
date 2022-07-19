@@ -1,0 +1,73 @@
+---
+permalink: sm-support/dcbx-tlv-statistics.html 
+sidebar: sidebar 
+keywords: statistics, typical, definition, logical, host, port, indicate 
+summary: DCBX TLV-Statistiken 
+---
+= DCBX TLV-Statistiken
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Wenn Sie Data Center Bridging Exchange (DCBX) Type Length Value (TLV) Statistics auswählen, werden die folgenden Statistiken angezeigt:
+
+* *Lokale Statistiken* -- die DCBX-Parameter, die auf dem Controller im Werk konfiguriert sind.
+* *Betriebsstatistiken* -- die DCBX-Parameter, die aus DCBX-Verhandlungen resultieren.
+* *Remote Statistics* -- die DCBX-Parameter vom Peer-Gerät, mit dem der Controller verbunden ist, normalerweise ein Schalter.
+
+
+[cols="2*"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+ISCSI-Host-Port
+ a| 
+Zeigt die Position des erkannten Host-Ports im Controller #, Port #-Format an.
+
+
+
+ a| 
+Flusssteuerungsmodus
+ a| 
+Der Flow Control-Modus des gesamten Ports. Gültige Werte sind deaktiviert, Standard, pro Priorität oder unbestimmt.
+
+
+
+ a| 
+Protokoll
+ a| 
+Das Kommunikationsprotokoll. Gültige Werte sind FCoE, FIP, iSCSI oder UNBEKANNT.
+
+
+
+ a| 
+Priorität
+ a| 
+Ganzzahlwert, der die Prioritätnummer der Kommunikation angibt.
+
+
+
+ a| 
+Prioritätsgruppe
+ a| 
+Ganzzahlwert, der die Prioritätsgruppe darstellt, der das Protokoll zugewiesen wurde.
+
+
+
+ a| 
+Priorität Gruppe % Bandbreite
+ a| 
+Prozentwert, der die der Prioritätsgruppe zugewiesene Bandbreite angibt.
+
+
+
+ a| 
+DCBX PFC-Status
+ a| 
+Der Status der prioritätsbasierten Flow Control (PFC) des spezifischen Ports. Der Wert ist entweder aktiviert oder deaktiviert.
+
+|===
+Weitere DCBX TLV Statistiken finden Sie in der State Capture Datei.

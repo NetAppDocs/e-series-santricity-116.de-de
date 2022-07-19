@@ -1,0 +1,13 @@
+---
+permalink: sm-mirroring/generic-concepts.html 
+sidebar: sidebar 
+keywords: concepts 
+summary: Konzepte 
+---
+= Konzepte
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+*Erfahren Sie mehr über...*

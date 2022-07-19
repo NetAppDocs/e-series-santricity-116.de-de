@@ -1,0 +1,45 @@
+---
+permalink: um-admin/home-page-unified.html 
+sidebar: sidebar 
+keywords: unified, manager, web, interface, allow, manage, multiple, storage, arrays, single, view 
+summary: Unified Manager ist eine webbasierte Benutzeroberfläche, mit der Sie mehrere Storage Arrays in einer einzelnen Ansicht managen können. 
+---
+= Schnittstellenübersicht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager ist eine webbasierte Benutzeroberfläche, mit der Sie mehrere Storage Arrays in einer einzelnen Ansicht managen können.
+
+
+
+== Hauptseite
+
+Wenn Sie sich bei Unified Manager anmelden, öffnet sich die Hauptseite zu *Verwalten - Alle*. Auf dieser Seite können Sie eine Liste der erkannten Speicher-Arrays in Ihrem Netzwerk durchblättern, ihren Status anzeigen und Vorgänge auf einem einzelnen Array oder einer Gruppe von Arrays durchführen.
+
+
+
+== Navigationsleiste rechts in der Seitenleiste
+
+Die Navigationsleiste umfasst Folgendes:
+
+* *Verwalten* -- Entdecken Sie Speicher-Arrays in Ihrem Netzwerk, starten Sie SANtricity System Manager für ein Array, importieren Sie Einstellungen von einem Array in mehrere Arrays und verwalten Sie Array-Gruppen. Aktivieren Sie die Kontrollkästchen neben den Array-Namen, um Vorgänge für sie auszuführen, z. B. das Importieren von Einstellungen und das Erstellen von Array-Gruppen. Die Ellipsen am Ende jeder Zeile bieten ein Inline-Menü für Operationen auf einem einzelnen Array, wie z. B. Umbenennen.
+* *Operationen* -- Zeigen Sie den Fortschritt von Batch-Operationen, wie das Importieren von Einstellungen von einem Array in ein anderes.
++
+[NOTE]
+====
+Einige Vorgänge sind nicht verfügbar, wenn ein Speicherarray einen nicht optimalen Status hat.
+
+====
+* *Zertifikatverwaltung* -- Verwalten von Zertifikaten zur Authentifizierung zwischen Browsern und Clients.
+* *Access Management* -- Einrichtung der Benutzerauthentifizierung für die Unified Manager-Schnittstelle.
+* *Support* -- Technische Support-Optionen, Ressourcen und Kontakte anzeigen.
+
+
+
+
+== Bannerfunktionen
+
+Über den oberen Banner können Sie auf die Hilfe und andere Dokumentation für die Unified Manager Oberfläche zugreifen. Sie können auch auf Verwaltungsoptionen zugreifen, die über das Dropdown-Menü neben Ihrem Anmeldenamen verfügbar sind.

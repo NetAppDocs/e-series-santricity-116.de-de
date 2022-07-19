@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: whats new, new features, 
+summary: Neue Funktionen im SANtricity OS. 
+---
+= Was ist neu in SANtricity OS 11.6
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die folgenden Tabellen beschreiben die neuen Funktionen in SANtricity OS 11.6.
+
+
+
+== Neue Funktionen in Version 11.62
+
+[cols="35h,~"]
+|===
+| Neues Feature | Beschreibung 
+
+
+ a| 
+Herunterladbare CLI
+ a| 
+System Manager für die E5700, EF570, E2800 und EF280 Arrays ermöglicht jetzt, die SANtricity Befehlszeilenschnittstelle (CLI) über einen Link auf der Seite Menü:Einstellungen[System > Add-ons] herunterzuladen und zu installieren. Dies ist die HTTPS-basierte Version der CLI (auch als „Secure CLI“ bezeichnet). Diese Funktion wurde bereits mit dem EF600 Array verfügbar gemacht.
+
+
+
+ a| 
+Spiegelung von Konfigurationsänderungen in System Manager und Unified Manager
+ a| 
+Die Aufgaben zur Konfiguration synchroner und asynchroner gespiegelter Paare sind von System Manager auf Unified Manager umgestiegen. Alle anderen Aufgaben zum Managen gespiegelter Paare verbleiben in System Manager.
+
+
+
+ a| 
+Neue 200-GB-fähige HIC (nur EF600 Arrays)
+ a| 
+In dieser Version wird eine neue 200-GB-fähige HIC für EF600 Storage-Arrays hinzugefügt. Unterstützte Schnittstellen: NVMe/IB, NVMe/RoCE und iSER/IB. Darüber hinaus werden 100-GB-SRP/IB unterstützt.
+
+
+
+ a| 
+Zusätzliche Optionen auf 100-GB-HIC (nur EF600 Arrays)
+ a| 
+Auf den vorhandenen 100-GB-HIC-, iSER/IB- und SRP/IB-Schnittstellen wird jetzt auch für EF600 Storage-Arrays unterstützt. (Diese Schnittstellen werden bereits für EF570 und E5700 Arrays unterstützt.)
+
+
+
+ a| 
+Löschen Sie den Mail-Server in System Manager
+ a| 
+Der System Manager ermöglichte die Konfiguration eines E-Mail-Servers, hatte aber keinen einfachen Mechanismus zum Entfernen. Mit diesem Release kann die Konfiguration des E-Mail-Servers in System Manager nun aus Warnungen entfernt werden, damit Warnmeldungen nicht mehr an die E-Mail-Adressen gesendet werden, die diesem Mail-Server zugeordnet sind.
+
+
+
+ a| 
+Optimierung der Kapazität von Pools und Volume-Gruppen (nur SSD-Laufwerke) in System Manager
+ a| 
+Bei SSD-Laufwerken steht im System Manager ein neuer Schieberegler zur Optimierung der Kapazität für die Einstellungen für den Pool und die Volume-Gruppe zur Verfügung. Mit dem Schieberegler können Sie die Balance der verfügbaren Kapazität im Vergleich zu SSD-Schreib-Performance und Lebensdauer der Laufwerke anpassen.
+
+
+
+ a| 
+Neue Host-Typen in System Manager
+ a| 
+Wenn Sie neue Hosts in System Manager erstellen, sind die präsentierten Host-Optionen nun in drei Kategorien unterteilt, um eine bessere Anleitung zu bieten: Allgemein, ungewöhnlich und nur bei Anleitung zu verwenden.
+
+|===
+
+
+== Neue Funktionen in Version 11.61
+
+[cols="35h,~"]
+|===
+| Neues Feature | Beschreibung 
+
+
+ a| 
+Fibre Channel-Unterstützung für die EF600
+ a| 
+In diesem Release wird Fibre-Channel-Host-Unterstützung für das EF600 Storage-System hinzugefügt. Dies ist der erste SCSI-Host, der von der EF600 unterstützt wird, der zu Beginn mit allen NVMe over Fabrics Host-Protokollen veröffentlicht wurde. Ein einzelner Controller für die EF600 kann in System Manager angezeigt und gemanagt werden. Es können mehrere EF600 Storage-Systeme in Unified Manager angezeigt und gemanagt werden.
+
+
+
+ a| 
+Anforderungen an das Passwort für den Admin-Benutzer
+ a| 
+Wenn Sie sich zum ersten Mal in Unified Manager anmelden möchten, müssen Sie jetzt ein Kennwort für den Administrator eingeben. Es gibt kein default „admin“-Passwort mehr.
+
+|===
+
+
+== Neue Funktionen in Version 11.60
+
+[cols="35h,~"]
+|===
+| Neues Feature | Beschreibung 
+
+
+ a| 
+Neues Storage-Systemmodell: EF600
+ a| 
+Dieses Release bietet ein neues EF600 All-Flash-Storage-System. Die EF600 umfasst NVMe-of Host-Schnittstellen und NVMe-SSDs.
+
+Die EF600 steigert den Durchsatz deutlich und verringert die Latenz. Zu den unterstützten Host-Schnittstellen gehören NVMe over IB, NVMe over RoCE und NVMe over FC, die in System Manager konfiguriert werden können. Es können mehrere EF600 Storage-Systeme in Unified Manager angezeigt und gemanagt werden.
+
+
+
+| Herunterladbare CLI | System Manager bietet jetzt die Möglichkeit, die SANtricity Befehlszeilenschnittstelle (CLI) über einen Link im Menü:Einstellungen[System > Add-ons]-Seite herunterzuladen und zu installieren. Dies ist die HTTPS-basierte Version der CLI. Auch das alte SANtricity-Storage-Manager-Paket enthält weiterhin die CLI. 
+|===

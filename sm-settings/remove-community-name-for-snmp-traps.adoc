@@ -1,0 +1,34 @@
+---
+permalink: sm-settings/remove-community-name-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: remove, community, snmp traps 
+summary: Sie können einen Community-Namen für SNMP-Traps entfernen. 
+---
+= Entfernen Sie den Community-Namen für SNMP-Traps
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können einen Community-Namen für SNMP-Traps entfernen.
+
+.Schritte
+. Wählen Sie *menu:Einstellungen[Alarme]*.
+. Wählen Sie die Registerkarte *SNMP* aus.
++
+Die Trap-Ziele und die Community-Namen werden auf der Seite Meldungen angezeigt.
+
+. Wählen Sie * Communities Konfigurieren*.
++
+Das Dialogfeld *Configure Communities* wird geöffnet.
+
+. Wählen Sie den Community-Namen aus, den Sie löschen möchten, und klicken Sie auf das Symbol *Entfernen* (X) ganz rechts.
++
+Wenn Trap-Ziele mit diesem Community-Namen verknüpft sind, werden im Dialogfeld *Community entfernen bestätigen* die betroffenen Trap-Zieladressen angezeigt.
+
+. Bestätigen Sie den Vorgang, und klicken Sie dann auf *Entfernen*.
+
+
+Der Community-Name und das zugehörige Trap-Ziel werden von der Seite *Alerts* entfernt.

@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/how-do-application-specific-workloads-help-me-manage-my-storage-array.html 
+sidebar: sidebar 
+keywords: application, software, server, exchange, define, one, workload, support, each, system, manager, automatically, recommend, volume, configuration, optimize, storage, characteristics, type, segment, size, controller, ownership, read, write, cache, include 
+summary: Eine Applikation ist Software wie SQL Server oder Exchange. Sie definieren einen oder mehrere Workloads, um jede Applikation zu unterstützen. Für einige Applikationen empfiehlt System Manager automatisch eine Volume-Konfiguration zur Optimierung des Storage. Merkmale wie I/O-Typ, Segmentgröße, Controller-Eigentümer und Lese- und Schreib-Cache sind in der Volume-Konfiguration enthalten. 
+---
+= Wie können mir applikationsspezifische Workloads beim Management meines Storage Arrays helfen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eine Applikation ist Software wie SQL Server oder Exchange. Sie definieren einen oder mehrere Workloads, um jede Applikation zu unterstützen. Für einige Applikationen empfiehlt System Manager automatisch eine Volume-Konfiguration zur Optimierung des Storage. Merkmale wie I/O-Typ, Segmentgröße, Controller-Eigentümer und Lese- und Schreib-Cache sind in der Volume-Konfiguration enthalten.
+
+Die Volume-Merkmale Ihres applikationsspezifischen Workloads diktieren, wie der Workload mit den Komponenten des Storage-Arrays interagiert und die Performance Ihrer Umgebung im Rahmen einer bestimmten Konfiguration bestimmt.

@@ -1,0 +1,101 @@
+---
+permalink: sm-settings/create-external-security-key.html 
+sidebar: sidebar 
+keywords: drive security, feature, key management server, external key, secure capable drive, storage array 
+summary: Um die Laufwerkssicherheitsfunktion mit einem Schlüsselverwaltungsserver verwenden zu können, müssen Sie einen externen Schlüssel erstellen, der vom Schlüsselverwaltungsserver und den sicheren Laufwerken im Speicher-Array gemeinsam genutzt wird. 
+---
+= Externen Sicherheitsschlüssel erstellen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um die Laufwerkssicherheitsfunktion mit einem Schlüsselverwaltungsserver verwenden zu können, müssen Sie einen externen Schlüssel erstellen, der vom Schlüsselverwaltungsserver und den sicheren Laufwerken im Speicher-Array gemeinsam genutzt wird.
+
+.Bevor Sie beginnen
+* Sichere Laufwerke müssen im Array installiert werden. Es können sich bei diesen Laufwerken um vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE) oder FIPS-Laufwerke (Federal Information Processing Standard) handelt.
++
+[NOTE]
+====
+Wenn sowohl FDE- als auch FIPS-Laufwerke im Storage Array installiert werden, nutzen sie alle denselben Sicherheitsschlüssel.
+
+====
+* Die Laufwerkssicherheitsfunktion muss aktiviert sein. Andernfalls wird während dieser Aufgabe ein Dialogfeld *Sicherheitsschlüssel nicht erstellen* geöffnet. Wenden Sie sich bei Bedarf an Ihren Storage-Anbieter, um Anweisungen zur Aktivierung der Laufwerkssicherheitsfunktion zu erhalten.
+* Die Client- und Server-Zertifikate sind auf Ihrem lokalen Host verfügbar, sodass sich das Storage-Array und der Schlüsselverwaltungsserver gegenseitig authentifizieren können. Das Clientzertifikat validiert die Controller, während das Serverzertifikat den Schlüsselverwaltungsserver validiert.
+
+
+In dieser Aufgabe definieren Sie die IP-Adresse des Schlüsselverwaltungsservers und die verwendete Portnummer und laden dann Zertifikate für die externe Schlüsselverwaltung.
+
+.Schritte
+. Wählen Sie *menu:Einstellungen[System]*.
+. Wählen Sie unter * Security Key Management* die Option *External Key erstellen* aus.
++
+[NOTE]
+====
+Wenn derzeit die interne Schlüsselverwaltung konfiguriert ist, wird ein Dialogfeld geöffnet, in dem Sie aufgefordert werden, zu bestätigen, dass Sie zur externen Schlüsselverwaltung wechseln möchten.
+
+====
++
+Das Dialogfeld * External Security Key erstellen* wird geöffnet.
+
+. Geben Sie unter *Verbinden mit Key Server* Informationen in die folgenden Felder ein:
++
+** *Key Management Server-Adresse* -- Geben Sie den vollständig qualifizierten Domänennamen oder die IP-Adresse (IPv4 oder IPv6) des Servers ein, der für die Schlüsselverwaltung verwendet wird.
+** *Nummer des Key Management-Ports* -- Geben Sie die Portnummer ein, die für die Kommunikation mit dem Key Management Interoperability Protocol (KMIP) verwendet wird. Die am häufigsten für die Kommunikation mit dem Verschlüsselungsmanagement-Server verwendete Portnummer ist 5696.
+** *Client-Zertifikat auswählen* -- Klicken Sie auf die erste *Durchsuchen*-Schaltfläche, um die Zertifikatdatei für die Speicher-Array-Controller auszuwählen.
+** *Wählen Sie das Serverzertifikat des Schlüsselverwaltungsservers* -- Klicken Sie auf die zweite Schaltfläche *Durchsuchen*, um die Zertifikatdatei für den Schlüsselverwaltungsserver auszuwählen.
+
+
+. Klicken Sie Auf *Weiter*.
+. Geben Sie unter *Create/Backup Key* Informationen in das folgende Feld ein:
++
+** *Passphrase definieren/Passphrase erneut eingeben* -- Geben Sie eine Passphrase ein und bestätigen Sie diese. Der Wert kann 8 bis 32 Zeichen lang sein und muss Folgendes enthalten:
++
+*** Ein Großbuchstabe (einer oder mehrere). Beachten Sie, dass die Passphrase Groß- und Kleinschreibung beachtet.
+*** Eine Nummer (eine oder mehrere).
+*** Ein nicht-alphanumerisches Zeichen wie !, *, @ (eines oder mehrere).
+
+
+
+
++
+[CAUTION]
+====
+Achten Sie darauf, Ihre Einträge zur späteren Verwendung aufzuzeichnen. Wenn Sie ein sicheres Laufwerk aus dem Speicher-Array verschieben möchten, müssen Sie den Passphrase kennen, um die Laufwerkdaten zu entsperren.
+
+====
+. Klicken Sie Auf *Fertig Stellen*.
++
+Das System stellt mit den eingegebenen Anmeldedaten eine Verbindung zum Schlüsselverwaltungsserver her. Anschließend wird eine Kopie des Sicherheitsschlüssels auf Ihrem lokalen System gespeichert.
+
++
+[NOTE]
+====
+Der Pfad für die heruntergeladene Datei hängt möglicherweise vom Standard-Download-Speicherort Ihres Browsers ab.
+
+====
+. Notieren Sie Ihren Passphrase und den Speicherort der heruntergeladenen Schlüsseldatei und klicken Sie dann auf *Schließen*.
++
+Auf der Seite wird die folgende Meldung mit zusätzlichen Links zur externen Schlüsselverwaltung angezeigt:
+
++
+`Current key management method: External`
+
+. Testen Sie die Verbindung zwischen dem Speicher-Array und dem Schlüsselverwaltungsserver, indem Sie *Testkommunikation* wählen.
++
+Die Testergebnisse werden im Dialogfeld angezeigt.
+
+
+
+Wenn das externe Verschlüsselungsmanagement aktiviert ist, können Sie sicher aktivierte Volume-Gruppen oder -Pools erstellen oder die Sicherheit für vorhandene Volume-Gruppen und -Pools aktivieren.
+
+[NOTE]
+====
+Wenn die Stromversorgung der Laufwerke aus- und wieder eingeschaltet wird, wechseln alle sicheren Laufwerke in den Status Sicherheitsverriegelt. In diesem Zustand sind die Daten nicht zugänglich, bis der Controller den korrekten Sicherheitsschlüssel während der Laufwerkinitialisierung anwendet. Wenn ein gesperrtes Laufwerk physisch entfernt und in einem anderen System installiert wird, verhindert der Status „Sicherheitsgesperrt“ unbefugten Zugriff auf seine Daten.
+
+====
+.Nachdem Sie fertig sind
+* Sie sollten den Sicherheitsschlüssel überprüfen, um sicherzustellen, dass die Schlüsseldatei nicht beschädigt ist.
+

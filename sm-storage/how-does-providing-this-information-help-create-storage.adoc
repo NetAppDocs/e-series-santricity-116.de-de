@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/how-does-providing-this-information-help-create-storage.html 
+sidebar: sidebar 
+keywords: workload, information, use, optimize, volume, characteristics, type, segment, size, read, write, cache, select, dictate, how, interact, storage, array, components 
+summary: Die Workload-Informationen werden verwendet, um die Volume-Merkmale wie I/O-Typ, Segmentgröße und Lese-/Schreib-Cache für den ausgewählten Workload zu optimieren. Diese optimierten Eigenschaften bestimmen, wie Ihr Workload mit den Storage Array-Komponenten interagiert. 
+---
+= Wie können durch die Bereitstellung dieser Informationen Speicher erstellt werden?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Workload-Informationen werden verwendet, um die Volume-Merkmale wie I/O-Typ, Segmentgröße und Lese-/Schreib-Cache für den ausgewählten Workload zu optimieren. Diese optimierten Eigenschaften bestimmen, wie Ihr Workload mit den Storage Array-Komponenten interagiert.
+
+Basierend auf den von Ihnen bereitgestellten Workload-Informationen erstellt der System Manager die entsprechenden Volumes und platziert sie in den verfügbaren Pools oder Volume-Gruppen, die derzeit im System vorhanden sind. Das System erstellt die Volumes und optimiert ihre Eigenschaften auf Grundlage der aktuellen Best Practices für den ausgewählten Workload.
+
+Bevor Sie mit dem Erstellen von Volumes für einen bestimmten Workload fertig sind, können Sie die empfohlene Volume-Konfiguration überprüfen und im Dialogfeld *Volumes hinzufügen/bearbeiten* die vom System empfohlenen Volumes und Eigenschaften bearbeiten, hinzufügen oder löschen.
+
+Informationen zu Best Practices finden Sie in Ihrer anwendungsspezifischen Dokumentation.

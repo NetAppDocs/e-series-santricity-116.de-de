@@ -1,0 +1,46 @@
+---
+permalink: sm-storage/application-specific-workloads.html 
+sidebar: sidebar 
+keywords: workload, storage, object, support, application, define, instance, application, system manager, configure, contain, volume, similar, underlying, characteristics, optimized, type, microsoft server, subsequent 
+summary: Ein Workload ist ein Storage-Objekt, das eine Applikation unterstützt. Sie können einen oder mehrere Workloads oder Instanzen pro Applikation definieren. Bei einigen Applikationen konfiguriert System Manager den Workload so, dass er Volumes mit ähnlichen zugrunde liegenden Volume-Merkmalen enthält. Diese Volume-Merkmale werden basierend auf dem Applikationstyp optimiert, den der Workload unterstützt. Wenn Sie beispielsweise einen Workload erstellen, der eine Microsoft SQL Server Applikation unterstützt und anschließend Volumes für diesen Workload erstellt, werden die zugrunde liegenden Volume-Merkmale zur Unterstützung von Microsoft SQL Server optimiert. 
+---
+= Applikationsspezifische Workloads
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ein Workload ist ein Storage-Objekt, das eine Applikation unterstützt. Sie können einen oder mehrere Workloads oder Instanzen pro Applikation definieren. Bei einigen Applikationen konfiguriert System Manager den Workload so, dass er Volumes mit ähnlichen zugrunde liegenden Volume-Merkmalen enthält. Diese Volume-Merkmale werden basierend auf dem Applikationstyp optimiert, den der Workload unterstützt. Wenn Sie beispielsweise einen Workload erstellen, der eine Microsoft SQL Server Applikation unterstützt und anschließend Volumes für diesen Workload erstellt, werden die zugrunde liegenden Volume-Merkmale zur Unterstützung von Microsoft SQL Server optimiert.
+
+Während der Volume-Erstellung werden Sie von System Manager aufgefordert, Fragen zur Verwendung eines Workloads zu beantworten. Wenn Sie beispielsweise Volumes für Microsoft Exchange erstellen, werden Sie gefragt, wie viele Mailboxen Sie benötigen, wie viele Mailboxen Ihre durchschnittlichen Anforderungen an die Mailbox-Kapazität sind und wie viele Kopien der Datenbank Sie benötigen. System Manager verwendet diese Informationen, um eine optimale Volume-Konfiguration für Sie zu erstellen, die Sie nach Bedarf bearbeiten können. Optional können Sie diesen Schritt in der Sequenz zur Volume-Erstellung überspringen.
+
+
+
+== Workload-Typen
+
+Es können zwei unterschiedliche Workload-Typen erstellt werden: Applikationsspezifisch oder sonstige.
+
+* *Anwendungsspezifisch*. Wenn Sie Volumes mit einem applikationsspezifischen Workload erstellen, empfiehlt das System möglicherweise eine optimierte Volume-Konfiguration, um Konflikte zwischen Applikations-Workload-I/O und anderem Datenverkehr aus Ihrer Applikationsinstanz zu minimieren. Volume-Merkmale wie I/O-Typ, Segmentgröße, Controller-Besitz und Lese- und Schreib-Cache werden automatisch für Workloads empfohlen und optimiert, die für die folgenden Applikationstypen erstellt wurden.
++
+** Microsoft® SQL Server™
+** Microsoft® Exchange Server™
+** Videoüberwachungsapplikationen
+** VMware ESXi™ (für Volumes, die mit dem File System der Virtual Machine verwendet werden sollen)
++
+Sie können die empfohlene Volume-Konfiguration überprüfen und die vom System empfohlenen Volumes und Eigenschaften bearbeiten, hinzufügen oder löschen, indem Sie das Dialogfeld *Volumes hinzufügen/bearbeiten* verwenden.
+
+
+
+* *Andere* (oder Anwendungen ohne spezifische Unterstützung für die Erstellung von Volumes). Bei anderen Workloads wird eine Volume-Konfiguration verwendet, die manuell angegeben werden muss, wann ein Workload erstellt werden soll, der nicht mit einer bestimmten Applikation verknüpft ist, oder ob System Manager nicht über integrierte Optimierungen für die Applikation verfügt, die Sie im Storage-Array verwenden möchten. Sie müssen die Volume-Konfiguration manuell über das Dialogfeld *Volumes hinzufügen/bearbeiten* festlegen.
+
+
+
+
+== Anzeige von Applikationen und Workloads
+
+Sie können Informationen zu einem applikationsspezifischen Workload auf verschiedene Weise anzeigen:
+
+* Sie können die Registerkarte *Applikationen & Workloads* in der Kachel *Volumes* auswählen, um die Volumes des Speicherarrays nach Workload gruppiert und den Applikationstyp anzuzeigen, mit dem der Workload verknüpft ist.
+* Sie können die Registerkarte *Applikationen & Workloads* in der Kachel *Performance* auswählen, um Performance-Metriken (Latenz, IOPS und MB) für logische Objekte anzuzeigen. Die Objekte werden nach Applikation und zugehörieinem Workload gruppiert. Indem Sie diese Performance-Daten in regelmäßigen Abständen erfassen, können Sie Basismessungen vornehmen und Trends analysieren. Dies unterstützt Sie bei der Untersuchung von I/O-Performance-Problemen.
+

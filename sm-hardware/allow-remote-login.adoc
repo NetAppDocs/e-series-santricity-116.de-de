@@ -1,0 +1,34 @@
+---
+permalink: sm-hardware/allow-remote-login.html 
+sidebar: sidebar 
+keywords: remote, login, lan, outside, ssh session, change settings, controller 
+summary: Mit der Remote-Anmeldung können Benutzer außerhalb des lokalen Netzwerks eine SSH-Sitzung starten und die Einstellungen auf dem Controller ändern. 
+---
+= Remote-Anmeldung zulassen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit der Remote-Anmeldung können Benutzer außerhalb des lokalen Netzwerks eine SSH-Sitzung starten und die Einstellungen auf dem Controller ändern.
+
+[CAUTION]
+====
+*Sicherheitsrisiko* -- aus Sicherheitsgründen aktivieren Sie Remote-Login nur für den technischen Support.
+
+====
+.Schritte
+. Wählen Sie *Hardware*.
+. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf *Zurück zum Regal anzeigen*.
++
+Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
+
+. Klicken Sie auf den Controller, für den Sie die Remote-Anmeldung aktivieren möchten.
++
+Das Kontextmenü des Controllers wird angezeigt.
+
+. Wählen Sie *Remote-Anmeldung ändern*, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
+
+
+Nachdem die Fehlerbehebung durch den technischen Support abgeschlossen ist, führen Sie dasselbe Verfahren aus, um die Remote-Anmeldung zu deaktivieren. Wenn Sie die Remote-Anmeldung deaktivieren, werden alle aktuellen SSH-Sitzungen beendet und neue Anmeldeanfragen werden abgelehnt.

@@ -1,0 +1,110 @@
+---
+permalink: sm-settings/nvme-terminology.html 
+sidebar: sidebar 
+keywords: nvme, terms, storage array 
+summary: Erfahren Sie, wie NVMe-Bedingungen auf Ihr Storage-Array angewendet werden. 
+---
+= NVMe – Terminologie
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Erfahren Sie, wie NVMe-Bedingungen auf Ihr Storage-Array angewendet werden.
+
+[cols="1a,3a"]
+|===
+| Laufzeit | Beschreibung 
+
+
+ a| 
+InfiniBand
+ a| 
+InfiniBand (IB) ist ein Kommunikationsstandard für die Datenübertragung zwischen hochperformanten Servern und Storage-Systemen.
+
+
+
+ a| 
+Namespace
+ a| 
+Ein Namespace ist NVM Storage, der für Blockzugriff formatiert ist. Es gleicht einer logischen Einheit in SCSI, die ein Volume im Storage Array bezieht.
+
+
+
+ a| 
+Namespace-ID
+ a| 
+Die Namespace-ID ist die eindeutige Kennung des NVMe Controllers für den Namespace und kann auf einen Wert zwischen 1 und 255 gesetzt werden. Sie entspricht einer Logical Unit Number (LUN) in SCSI.
+
+
+
+ a| 
+NQN
+ a| 
+NVMe Qualified Name (NQN) wird zur Identifizierung des Remote-Storage-Ziels (des Storage-Arrays) verwendet.
+
+
+
+ a| 
+NVM
+ a| 
+Non-Volatile Memory (NVM) ist ein persistenter Speicher, der in vielen Arten von Speichergeräten verwendet wird.
+
+
+
+ a| 
+NVMe
+ a| 
+Non-Volatile Memory Express (NVMe) ist eine Schnittstelle, die für Flash-basierte Storage-Geräte wie SSD-Laufwerke konzipiert wurde. NVMe reduziert den I/O-Overhead und beinhaltet Performance-Verbesserungen im Vergleich zu vorherigen Schnittstellen für logische Geräte.
+
+
+
+ a| 
+NVMe-of
+ a| 
+Non-Volatile Memory Express over Fabrics (NVMe-of) ist eine Spezifikation, die die Übertragung von NVMe-Befehlen und -Daten über ein Netzwerk zwischen Host und Storage ermöglicht.
+
+
+
+ a| 
+NVMe-Controller
+ a| 
+Während der Host-Verbindung wird ein NVMe-Controller erstellt. Es stellt einen Zugriffspfad zwischen einem Host und den Namespaces im Storage-Array bereit.
+
+
+
+ a| 
+NVMe-Warteschlange
+ a| 
+Zum Übergeben von Befehlen und Nachrichten über die NVMe Schnittstelle wird eine Warteschlange verwendet.
+
+
+
+ a| 
+NVMe-Subsystem
+ a| 
+Das Storage-Array mit einer NVMe-Host-Verbindung.
+
+
+
+ a| 
+RDMA
+ a| 
+RDMA (Remote Direct Memory Access) ermöglicht eine direktere Datenverschiebung auf einem Server und wieder zurück, indem es ein Transportprotokoll in der NIC-Hardware (Network Interface Card) implementiert.
+
+
+
+ a| 
+ROCE
+ a| 
+RDMA over Converged Ethernet (RoCE) ist ein Netzwerkprotokoll, das über ein Ethernet-Netzwerk einen Remote Direct Memory Access (RDMA) ermöglicht.
+
+
+
+ a| 
+SSD
+ a| 
+Solid State Disks (SSDs) sind Daten-Storage-Geräte, die Solid State Memory (Flash) verwenden, um Daten dauerhaft zu speichern. SSDs bieten herkömmliche Festplatten an und sind mit denselben Schnittstellen verfügbar wie die Festplatten.
+
+|===

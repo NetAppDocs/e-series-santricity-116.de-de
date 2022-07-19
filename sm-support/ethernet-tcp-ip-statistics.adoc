@@ -1,0 +1,192 @@
+---
+permalink: sm-support/ethernet-tcp-ip-statistics.html 
+sidebar: sidebar 
+keywords: ethernet, statistics, definition, statistics, transmitted, byte, expired 
+summary: Ethernet TCP/IP-Statistiken 
+---
+= Ethernet TCP/IP-Statistiken
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Wenn Sie Ethernet TCP/IP-Statistiken auswählen, werden die TCP-Statistiken in dieser Tabelle angezeigt. Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen.
+
+[cols="2*"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+TXS
+ a| 
+Anzahl übertragener Segmente
+
+
+
+ a| 
+TXB
+ a| 
+Übertragene Byte-Anzahl
+
+
+
+ a| 
+RTxTE
+ a| 
+Die Anzahl der abgelaufenen Wiederholungstimer ist abgelaufen
+
+
+
+ a| 
+TxDACK
+ a| 
+Verzögerte ACK-Anzahl übertragen
+
+
+
+ a| 
+TxACK
+ a| 
+ACK-Anzahl übertragen
+
+
+
+ a| 
+RXS
+ a| 
+Anzahl empfangene Segmente
+
+
+
+ a| 
+RXB
+ a| 
+Anzahl der empfangenen Bytes
+
+
+
+ a| 
+RxDACK
+ a| 
+Doppelte ACK-Anzahl empfangen
+
+
+
+ a| 
+RxACK
+ a| 
+ACK-Anzahl empfangen
+
+
+
+ a| 
+RxSEC
+ a| 
+Fehleranzahl des empfangenen Segments
+
+
+
+ a| 
+RxSOOC
+ a| 
+Nicht bestellbare Segmente erhalten
+
+
+
+ a| 
+RxWP
+ a| 
+Anzahl der Fühler für Fenster empfangen
+
+
+
+ a| 
+RxWU
+ a| 
+Anzahl der empfangenen Fensteraktualisierungen
+
+|===
+Wenn Sie Ethernet TCP/IP-Statistiken auswählen, werden die IP-Statistiken in dieser Tabelle angezeigt.
+
+[cols="2*"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+TXP
+ a| 
+Anzahl übertragener Pakete
+
+
+
+ a| 
+TXB
+ a| 
+Übertragene Byte-Anzahl
+
+
+
+ a| 
+TXF
+ a| 
+Anzahl der übertragenen Fragmente
+
+
+
+ a| 
+RXP
+ a| 
+Empfangene Pakete zählen. Wählen Sie *IPv4 anzeigen*, um die Anzahl der empfangenen IPv4-Pakete anzuzeigen. Wählen Sie *IPv6 anzeigen*, um die Anzahl der empfangenen IPv6-Pakete anzuzeigen.
+
+
+
+ a| 
+RXB
+ a| 
+Anzahl der empfangenen Bytes
+
+
+
+ a| 
+RXF
+ a| 
+Anzahl der empfangenen Fragmente
+
+
+
+ a| 
+RxPE
+ a| 
+Fehleranzahl der empfangenen Pakete
+
+
+
+ a| 
+DR
+ a| 
+Anzahl der Datagrammumzusammenbau
+
+
+
+ a| 
+DRE-OLFC
+ a| 
+Fehler bei der erneuten Datenzusammenlegung, überlappende Fragmentanzahl
+
+
+
+ a| 
+DRE-OOFC
+ a| 
+Fehler bei der erneuten Datenzusammenlegung, Anzahl der Fragmente außerhalb der Reihenfolge
+
+
+
+ a| 
+DRE-TOC
+ a| 
+Fehler beim erneuten Zusammenbau des Datagramms, Anzahl der Auszeiten
+
+|===

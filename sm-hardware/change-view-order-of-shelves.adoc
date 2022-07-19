@@ -1,0 +1,19 @@
+---
+permalink: sm-hardware/change-view-order-of-shelves.html 
+sidebar: sidebar 
+keywords: change, order, shelf, display, hardware page, match shelf, physical, cabinet 
+summary: Sie können die Reihenfolge der auf der Seite Hardware angezeigten Shelfs ändern, um sie der physischen Reihenfolge der Regale in einem Schrank anzupassen. 
+---
+= Ansichtsreihenfolge der Shelfs ändern
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Reihenfolge der auf der Seite Hardware angezeigten Shelfs ändern, um sie der physischen Reihenfolge der Regale in einem Schrank anzupassen.
+
+.Schritte
+. Wählen Sie *Hardware*.
+. Wählen Sie oben rechts in der Regalansicht die nach-oben- oder nach-unten-Pfeile aus, um die Reihenfolge der auf der Seite *Hardware* angezeigten Regale neu anzuordnen.
+

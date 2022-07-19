@@ -1,0 +1,22 @@
+---
+permalink: um-manage/create-storage-array-group.html 
+sidebar: sidebar 
+keywords: create, storage, array, group, 
+summary: Sie erstellen Speichergruppen und fügen dann Speicher-Arrays zu den Gruppen hinzu. Die Speichergruppe definiert, welche Laufwerke den Speicher bereitstellen, aus dem das Volume besteht. 
+---
+= Speicherarray-Gruppe erstellen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie erstellen Speichergruppen und fügen dann Speicher-Arrays zu den Gruppen hinzu. Die Speichergruppe definiert, welche Laufwerke den Speicher bereitstellen, aus dem das Volume besteht.
+
+.Schritte
+. Wählen Sie auf der Seite *Verwalten* die Option MENU:Gruppen verwalten[Speicherarray-Gruppe erstellen].
+. Geben Sie im Feld *Name* einen Namen für die neue Gruppe ein.
+. Wählen Sie die Speicher-Arrays aus, die Sie der neuen Gruppe hinzufügen möchten.
+. Klicken Sie Auf *Erstellen*.
+

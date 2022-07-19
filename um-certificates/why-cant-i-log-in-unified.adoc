@@ -1,0 +1,29 @@
+---
+permalink: um-certificates/why-cant-i-log-in-unified.html 
+sidebar: sidebar 
+keywords: receive, error, attempt, santricity, unified, manager, causes 
+summary: Wenn beim Versuch, sich bei SANtricity Unified Manager anzumelden, ein Fehler angezeigt wird, überprüfen Sie die möglichen Ursachen. 
+---
+= Warum kann ich mich nicht anmelden?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn beim Versuch, sich bei SANtricity Unified Manager anzumelden, ein Fehler angezeigt wird, überprüfen Sie die möglichen Ursachen.
+
+Login-Fehler bei Unified Manager können aus einem der folgenden Gründe auftreten:
+
+* Sie haben einen falschen Benutzernamen oder ein falsches Passwort eingegeben.
+* Sie verfügen über unzureichende Berechtigungen.
+* Der Verzeichnisserver (falls konfiguriert) ist möglicherweise nicht verfügbar. Wenn dies der Fall ist, melden Sie sich mit einer lokalen Benutzerrolle an.
+* Sie haben mehrmals versucht, sich erfolglos anzumelden, was den Sperrmodus ausgelöst hat. Warten Sie 10 Minuten, bis Sie sich erneut anmelden können.
+
+
+Aus einem der folgenden Gründe können Anmeldefehler bei einem Remote-Speicher-Array auftreten:
+
+* Sie haben ein falsches Kennwort eingegeben.
+* Sie haben mehrmals versucht, sich erfolglos anzumelden, was den Sperrmodus ausgelöst hat. Warten Sie 10 Minuten, um sich erneut anzumelden.
+* Die maximale Anzahl an Client-Verbindungen, die auf dem Controller verwendet werden, wurde erreicht. Suchen Sie nach mehreren Benutzern oder Clients.
+

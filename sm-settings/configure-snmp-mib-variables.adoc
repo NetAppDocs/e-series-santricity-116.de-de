@@ -1,0 +1,54 @@
+---
+permalink: sm-settings/configure-snmp-mib-variables.html 
+sidebar: sidebar 
+keywords: snmp alerts, optional, mib, variables, snmp traps, storage array, contact person 
+summary: 'Für SNMP-Warnungen können Sie optional Management Information Base (MIB)-Variablen konfigurieren, die in SNMP-Traps angezeigt werden. Diese Variablen können den Namen des Speicher-Arrays, den Speicherort des Arrays und einen Ansprechpartner zurückgeben.' 
+---
+= Konfigurieren Sie SNMP-MIB-Variablen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Für SNMP-Warnungen können Sie optional Management Information Base (MIB)-Variablen konfigurieren, die in SNMP-Traps angezeigt werden. Diese Variablen können den Namen des Speicher-Arrays, den Speicherort des Arrays und einen Ansprechpartner zurückgeben.
+
+Die MIB-Datei muss kopiert und mit der SNMP-Dienst-Anwendung auf dem Server kompiliert werden.
+
+Wenn Sie keine MIB-Datei haben, können Sie es wie folgt erhalten:
+
+* Gehen Sie zu https://mysupport.netapp.com/site/["NetApp Support"^].
+* Klicken Sie Auf *Downloads*.
+* Klicken Sie Auf *Software*.
+* Suchen Sie Ihre Verwaltungssoftware (z. B. SANtricity-System-Manager), und klicken Sie dann rechts auf *Los!*.
+* Klicken Sie auf *Ansicht & Download* auf der neuesten Version.
+* Klicken Sie unten auf der Seite auf *Weiter*.
+* Akzeptieren Sie die EULA.
+* Scrollen Sie nach unten, bis Sie *MIB-Datei für SNMP-Traps* sehen, und klicken Sie dann auf den Link, um die Datei herunterzuladen.
+
+
+In dieser Aufgabe wird beschrieben, wie MIB-Variablen für SNMP-Traps definiert werden. Diese Variablen können als Antwort auf SNMP GetRequests folgende Werte zurückgeben:
+
+* `_sysName_` (Name für das Speicher-Array)
+* `_sysLocation_` (Speicherort des Speicher-Arrays)
+* `_sysContact_` (Name eines Administrators)
+
+
+.Schritte
+. Wählen Sie *menu:Einstellungen[Alarme]*.
+. Wählen Sie die Registerkarte *SNMP* aus.
+. Wählen Sie *Konfigurieren von SNMP-MIB-Variablen*.
++
+Das Dialogfeld SNMP-MIB-Variablen konfigurieren wird geöffnet.
+
+. Geben Sie einen oder mehrere der folgenden Werte ein, und klicken Sie dann auf *Speichern*.
++
+** *Name* -- der Wert für die MIB-Variable `_sysName_`. Geben Sie beispielsweise einen Namen für das Speicher-Array ein.
+** *Lage* -- der Wert für die MIB Variable `_sysLocation_`. Geben Sie beispielsweise einen Speicherort des Speicher-Arrays ein.
+** *Kontakt* -- der Wert für die MIB-Variable `_sysContact_`. Geben Sie beispielsweise einen Administrator ein, der für das Speicher-Array verantwortlich ist.
+
+
+
+
+Diese Werte werden in SNMP-Trap-Meldungen für Storage Array-Warnungen angezeigt.

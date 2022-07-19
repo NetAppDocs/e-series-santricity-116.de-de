@@ -1,0 +1,33 @@
+---
+permalink: sm-settings/add-community-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: add up, community, snmp traps 
+summary: Sie können bis zu 256 Community-Namen für SNMP-Traps hinzufügen. 
+---
+= Fügen Sie Community-Namen für SNMP-Traps hinzu
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können bis zu 256 Community-Namen für SNMP-Traps hinzufügen.
+
+Der/die Community-Name(n) muss erstellt werden. Der Community-Name, ein String, der wie ein Kennwort für die Netzwerkserver fungiert, wird in der Regel von einem Netzwerkadministrator erstellt. Es besteht nur aus druckbaren ASCII-Zeichen.
+
+.Schritte
+. Wählen Sie *menu:Einstellungen[Alarme]*.
+. Wählen Sie die Registerkarte *SNMP* aus.
++
+Die Trap-Ziele und Community-Namen werden in der Tabelle angezeigt.
+
+. Wählen Sie * Communities Konfigurieren*.
++
+Das Dialogfeld „Communities konfigurieren“ wird geöffnet.
+
+. Wählen Sie *Weitere Community hinzufügen*.
+. Geben Sie den neuen Community-Namen ein und klicken Sie dann auf *Speichern*.
+
+
+Der neue Community-Name wird auf der Seite *Alerts* auf der Registerkarte *SNMP* angezeigt.

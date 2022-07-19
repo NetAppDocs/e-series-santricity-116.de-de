@@ -1,0 +1,215 @@
+---
+permalink: sm-storage/functional-comparison-of-pools-and-volume-groups.html 
+sidebar: sidebar 
+keywords: function, purpose, pool, volume, group, same, objects, set, drives, logically, together, storage, array, create, host, access 
+summary: Die Funktion und der Zweck eines Pools und einer Volume-Gruppe sind gleich. Beide Objekte sind eine Gruppe von Laufwerken, die in einem Storage-Array logisch gruppiert sind und dazu verwendet werden, Volumes zu erstellen, auf die ein Host zugreifen kann. 
+---
+= Funktionsvergleich der Pools und Volume-Gruppen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Funktion und der Zweck eines Pools und einer Volume-Gruppe sind gleich. Beide Objekte sind eine Gruppe von Laufwerken, die in einem Storage-Array logisch gruppiert sind und dazu verwendet werden, Volumes zu erstellen, auf die ein Host zugreifen kann.
+
+Die folgende Tabelle hilft Ihnen bei der Entscheidung, ob ein Pool oder eine Volume-Gruppe Ihre Storage-Anforderungen am besten erfüllt.
+
+[cols="3*""]
+|===
+| Funktion | Pool | Volume-Gruppe 
+
+
+ a| 
+Unterschiedliche unterstützte RAID-Level
+ a| 
+Nein Immer RAID 6.
+ a| 
+Ja. RAID 0, 1, 10, 5 und 6 erhältlich.
+
+
+
+ a| 
+Unterstützung von Thin Volumes
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+ a| 
+Unterstützung von vollständiger Festplattenverschlüsselung (Full Disk Encryption, FDE)
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+ a| 
+Data Assurance (da) wird unterstützt
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+ a| 
+Schutz vor Shelf-Verlust unterstützt
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+ a| 
+Schubladenschutz unterstützt
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+ a| 
+Unterstützung für gemischte Laufwerksgeschwindigkeiten
+ a| 
+Es wird empfohlen, das gleiche zu sein, aber nicht erforderlich. Langsamstes Laufwerk bestimmt die Geschwindigkeit für alle Laufwerke.
+ a| 
+Es wird empfohlen, das gleiche zu sein, aber nicht erforderlich. Langsamstes Laufwerk bestimmt die Geschwindigkeit für alle Laufwerke.
+
+
+
+ a| 
+Kapazität gemischter Laufwerke wird unterstützt
+ a| 
+Es wird empfohlen, das gleiche zu sein, aber nicht erforderlich. Kleinstes Laufwerk bestimmt die Kapazität für alle Laufwerke.
+ a| 
+Es wird empfohlen, das gleiche zu sein, aber nicht erforderlich. Kleinstes Laufwerk bestimmt die Kapazität für alle Laufwerke.
+
+
+
+ a| 
+Mindestanzahl an Laufwerken
+ a| 
+11
+ a| 
+Hängt von der RAID-Ebene ab. RAID 0 benötigt 1. RAID 1 oder 10 benötigt 2 (erfordert eine gleichmäßige Zahl). RAID 5 Minimum ist 3. RAID 6 Minimum ist 5.
+
+
+
+ a| 
+Maximale Anzahl an Laufwerken
+ a| 
+Bis zur Obergrenze für das Storage-Array
+ a| 
+RAID 1 und 10 bis zur maximalen Obergrenze für RAID 5- und 6-30-Laufwerke des Speicherarrays
+
+
+
+ a| 
+Bei der Erstellung eines Volumes können einzelne Laufwerke ausgewählt werden
+ a| 
+Nein
+ a| 
+Ja.
+
+
+
+ a| 
+Kann die Segmentgröße beim Erstellen eines Volumes festlegen
+ a| 
+Ja. 128 KB unterstützt.
+ a| 
+Ja.
+
+
+
+ a| 
+Bei der Erstellung eines Volumes können I/O-Merkmale festgelegt werden
+ a| 
+Nein
+ a| 
+Ja. Dateisystem, Datenbank, Multimedia und benutzerdefinierte Unterstützung.
+
+
+
+ a| 
+Schutz vor Laufwerksausfällen
+ a| 
+Nutzt die Konservierungskapazität auf jedem Laufwerk im Pool, um die Rekonstruktion zu beschleunigen.
+ a| 
+Verwendet ein Hot-Spare-Laufwerk. Die Rekonstruktion wird durch den IOPS des Laufwerks begrenzt.
+
+
+
+ a| 
+Warnung beim Erreichen der Kapazitätsgrenze
+ a| 
+Ja. Kann eine Meldung festlegen, wenn die genutzte Kapazität einen Prozentsatz der maximalen Kapazität erreicht.
+ a| 
+Nein
+
+
+
+ a| 
+Migration zu einem anderen unterstützten Storage-Array
+ a| 
+Nein Erfordert, dass Sie zuerst zu einer Volume-Gruppe migrieren.
+ a| 
+Ja.
+
+
+
+ a| 
+Dynamische Segmentgröße (DSS)
+ a| 
+Nein
+ a| 
+Ja.
+
+
+
+ a| 
+Der RAID-Level kann geändert werden
+ a| 
+Nein
+ a| 
+Ja.
+
+
+
+ a| 
+Volume-Erweiterung (zusätzliche Kapazität)
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+ a| 
+Kapazitätserweiterung (zusätzliche Kapazität)
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+ a| 
+Senkung der Kapazität
+ a| 
+Ja.
+ a| 
+Nein
+
+|===
+[NOTE]
+====
+Gemischte Laufwerkstypen (HDD, SSD) werden weder für Pools noch für Volume-Gruppen unterstützt.
+
+====

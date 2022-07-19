@@ -1,0 +1,27 @@
+---
+permalink: sm-interface/setup-wizard-overview.html 
+sidebar: sidebar 
+keywords: setup wizard, configure, storage, array, hardware, host, application workload, alert, autosupport 
+summary: Mit dem Setup-Assistenten können Sie Ihr Storage-Array konfigurieren, einschließlich Hardware, Hosts, Applikationen, Workloads Pools, Warnmeldungen und AutoSupport. 
+---
+= Übersicht über den Setup-Assistenten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit dem Setup-Assistenten können Sie Ihr Storage-Array konfigurieren, einschließlich Hardware, Hosts, Applikationen, Workloads Pools, Warnmeldungen und AutoSupport.
+
+Wenn Sie System Manager zum ersten Mal öffnen, wird der Setup-Assistent gestartet.
+
+Der Setup-Assistent fordert Sie auf, grundlegende Konfigurationsaufgaben durchzuführen, z. B. die Benennung Ihres Speicher-Arrays, die Konfiguration Ihrer Hosts, die Auswahl von Anwendungen und die Erstellung von Speicherpools.
+
+Wenn Sie den Assistenten abbrechen, können Sie ihn nicht manuell neu starten.
+
+Der Assistent wird automatisch neu gestartet, wenn Sie den System Manager öffnen oder den Browser aktualisieren, und mindestens eine der folgenden Bedingungen erfüllt ist:
+
+* Es werden keine Pools und Volume-Gruppen erkannt.
+* Es werden keine Workloads erkannt.
+* Es werden keine Benachrichtigungen konfiguriert.
+

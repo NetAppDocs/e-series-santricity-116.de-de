@@ -1,0 +1,94 @@
+---
+permalink: um-certificates/use-ca-signed-certificate-um.html 
+sidebar: sidebar 
+keywords: ca certificate, secure, access, management, system, unified manager 
+summary: Sie können CA-signierte Zertifikate für den sicheren Zugriff auf das Verwaltungssystem, das Unified Manager hostet, abrufen und importieren. 
+---
+= CA-signierte Zertifikate verwenden
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können CA-signierte Zertifikate für den sicheren Zugriff auf das Verwaltungssystem, das Unified Manager hostet, abrufen und importieren.
+
+.Bevor Sie beginnen
+* Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
+
+
+Die Verwendung von CA-signierten Zertifikaten ist ein zweistufiges Verfahren.
+
+
+
+== Schritt 1: Abschließen und einreichen einer CSR
+
+Sie müssen zuerst eine CSR-Datei (Certificate Signing Request) generieren und sie an die CA senden.
+
+.Bevor Sie beginnen
+* Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
+
+
+Diese Aufgabe beschreibt, wie Sie die CSR-Datei generieren, die Sie an eine CA senden, um signierte, Management-Zertifikate für das System zu erhalten, das Unified Manager hostet, und den Web Services Proxy. Sie müssen Informationen über Ihr Unternehmen sowie die IP-Adresse oder den DNS-Namen des Hostsystems angeben.
+
+[CAUTION]
+====
+Generieren Sie nach der Übermittlung an die CA keine neue CSR. Wenn Sie eine CSR erstellen, erstellt das System ein privates und öffentliches Schlüsselpaar. Der öffentliche Schlüssel ist Teil des CSR, während der private Schlüssel im Schlüsselspeicher aufbewahrt wird. Wenn Sie die signierten Zertifikate erhalten und in den Schlüsselspeicher importieren, stellt das System sicher, dass sowohl der private als auch der öffentliche Schlüssel das ursprüngliche Paar sind. Daher dürfen Sie nach dem Einreichen einer CSR an die CA keine neue CSR generieren. Wenn Sie dies tun, generieren die Controller neue Schlüssel, und die Zertifikate, die Sie von der CA erhalten, funktionieren nicht.
+
+====
+.Schritte
+. Wählen Sie *Zertifikatverwaltung*.
+. Wählen Sie auf der Registerkarte *Management* die Option *CSR abschließen* aus.
+. Geben Sie die folgenden Informationen ein, und klicken Sie dann auf *Weiter*:
++
+** *Organisation* -- der vollständige, rechtliche Name Ihres Unternehmens oder Ihrer Organisation. Fügen Sie Suffixe wie Inc. Oder Corp. Mit ein
+** *Organisationseinheit (optional)* -- die Abteilung Ihrer Organisation, die das Zertifikat bearbeitet.
+** *Stadt/Ort* -- die Stadt, in der sich Ihr Hostsystem oder Ihr Geschäft befindet.
+** *Bundesland/Region (optional)* -- der Staat oder die Region, in der sich Ihr Hostsystem oder Ihr Geschäft befindet.
+** *Land ISO Code* -- der zweistellige ISO-Code Ihres Landes (International Organization for Standardization), wie z. B. die USA.
+
+
+. Geben Sie die folgenden Informationen über das Host-System ein:
++
+** *Allgemeiner Name* -- die IP-Adresse oder der DNS-Name des Hostsystems, auf dem der Web Services Proxy installiert ist. Stellen Sie sicher, dass diese Adresse korrekt ist, sie muss mit den Angaben übereinstimmen, die Sie für den Zugriff auf Unified Manager im Browser eingeben. Verwenden Sie kein http:// oder https://.
+** *Alternative IP-Adressen* -- Wenn der allgemeine Name eine IP-Adresse ist, können Sie optional weitere IP-Adressen oder Aliase für das Host-System eingeben. Verwenden Sie für mehrere Einträge ein kommagetrenntes Format.
+** *Alternative DNS-Namen* -- Wenn der gemeinsame Name ein DNS-Name ist, geben Sie weitere DNS-Namen für das Host-System ein. Verwenden Sie für mehrere Einträge ein kommagetrenntes Format. Falls es keine alternativen DNS-Namen gibt, aber Sie im ersten Feld einen DNS-Namen eingegeben haben, kopieren Sie diesen Namen hier.
+
+
+. Klicken Sie Auf *Fertig Stellen*.
++
+Eine CSR-Datei wird auf Ihr lokales System heruntergeladen. Der Speicherort des Downloads hängt von Ihrem Browser ab.
+
+. Senden Sie die CSR-Datei an eine CA und fordern Sie signierte Zertifikate im PEM- oder DER-Format an.
+
+
+Warten Sie, bis die CA die Zertifikatdateien zurückgibt, und gehen Sie dann zu link:step-3-import-management-certificates-unified.html["Schritt 2: Import Management Zertifikate"].
+
+
+
+== Schritt 2: Import Management Zertifikate
+
+Nachdem Sie signierte Zertifikate erhalten haben, importieren Sie die Zertifikatskette für das Hostsystem, auf dem die Unified Manager-Schnittstelle installiert ist.
+
+.Bevor Sie beginnen
+* Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
+* Sie haben eine Anfrage zur Zertifikatssignierung (.CSR-Datei) erstellt und an die CA gesendet.
+* Die CA hat vertrauenswürdige Zertifikatdateien zurückgegeben.
+* Die Zertifikatdateien werden auf Ihrem lokalen System installiert.
+* Wenn die CA ein verkettetes Zertifikat (z. B. eine .p7b-Datei) lieferte, müssen Sie die verkettete Datei in einzelne Dateien entpacken: Das Stammzertifikat, ein oder mehrere Zwischenzertifikate und das Serverzertifikat. Sie können die Windows verwenden `certmgr` Dienstprogramm zum Auspacken der Dateien (Rechtsklick und wählen Sie *menu:Alle Aufgaben[Export]*). Wenn die Exporte abgeschlossen sind, wird für jede Zertifikatdatei in der Kette eine CER-Datei angezeigt.
+
+
+.Schritte
+. Wählen Sie *Zertifikatverwaltung*.
+. Wählen Sie auf der Registerkarte * Management* die Option *Import*.
++
+Es wird ein Dialogfeld zum Importieren der Zertifikatdateien geöffnet.
+
+. Klicken Sie auf *Durchsuchen*, um zunächst die Root- und Zwischendateien auszuwählen und dann das Serverzertifikat auszuwählen.
++
+Die Dateinamen werden im Dialogfeld angezeigt.
+
+. Klicken Sie Auf *Import*.
+
+
+Die Dateien werden hochgeladen und validiert. Die Zertifikatinformationen werden auf der Seite Zertifikatverwaltung angezeigt.

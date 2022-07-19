@@ -1,0 +1,18 @@
+---
+permalink: sm-support/critical-events.html 
+sidebar: sidebar 
+keywords: critical, events, indicate, problem, storage, array, resolve, immediately, might, prevent, loss, data, access 
+summary: Kritische Ereignisse weisen auf ein Problem mit dem Speicher-Array hin. Wenn das kritische Ereignis sofort behoben wird, kann der Verlust des Datenzugriffs verhindert werden. 
+---
+= Kritische Ereignisse
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Kritische Ereignisse weisen auf ein Problem mit dem Speicher-Array hin. Wenn das kritische Ereignis sofort behoben wird, kann der Verlust des Datenzugriffs verhindert werden.
+
+Wenn ein kritisches Ereignis eintritt, wird es im Ereignisprotokoll protokolliert. Alle kritischen Ereignisse werden an die SNMP-Verwaltungskonsole oder an den E-Mail-Empfänger gesendet, den Sie so konfiguriert haben, dass Sie Benachrichtigungen erhalten. Wenn die Shelf-ID zum Zeitpunkt des Ereignisses nicht bekannt ist, wird die Shelf-ID als „Shelf unbekannt“ aufgeführt.
+
+Bei Erhalt eines kritischen Ereignisses finden Sie im Recovery Guru Procedure eine detaillierte Beschreibung des kritischen Ereignisses. Schließen Sie das Verfahren des Recovery Guru zur Korrektur des kritischen Ereignisses ab. Zur Korrektur bestimmter kritischer Ereignisse müssen Sie sich möglicherweise an den technischen Support wenden.

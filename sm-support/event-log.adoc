@@ -1,0 +1,27 @@
+---
+permalink: sm-support/event-log.html 
+sidebar: sidebar 
+keywords: event, log, provide, historical, record, occur, storage, array, aid, technical, support, troubleshooting, leading, failures 
+summary: Das Ereignisprotokoll liefert eine Verlaufsliste zu Ereignissen, die im Storage-Array aufgetreten sind, und unterstützt den technischen Support bei der Behebung von Fehlern. 
+---
+= Ereignisprotokoll
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Ereignisprotokoll liefert eine Verlaufsliste zu Ereignissen, die im Storage-Array aufgetreten sind, und unterstützt den technischen Support bei der Behebung von Fehlern.
+
+Das Ereignisprotokoll ist eine detaillierte Aufzeichnung der Ereignisse, die im Speicher-Array auftreten. Dabei werden Konfigurationsereignisse und Ausfälle von Storage-Array-Komponenten aufgezeichnet. Sie können das Ereignisprotokoll als zusätzliches Diagnose-Tool für den Recovery Guru zur Verfolgung von Storage Array-Ereignissen verwenden. Greifen Sie stets zuerst auf den Recovery Guru zu, wenn Sie versuchen, eine Wiederherstellung nach Komponentenausfällen im Storage Array durchzuführen.
+
+Die Ereignisse im Ereignisprotokoll werden mit unterschiedlichen Status kategorisiert. Ereignisse, für die Sie Maßnahmen ergreifen müssen, haben die folgenden Status:
+
+* Kritisch
+* Warnung
+
+
+Ereignisse, die informativ sind und keine sofortigen Maßnahmen erfordern, sind die folgenden:
+
+* Informativ
+

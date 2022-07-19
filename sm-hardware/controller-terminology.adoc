@@ -1,0 +1,117 @@
+---
+permalink: sm-hardware/controller-terminology.html 
+sidebar: sidebar 
+keywords: controller, terms, storage, array 
+summary: Erfahren Sie, wie die Controller-Bedingungen auf Ihr Storage Array zutreffen. 
+---
+= Controller-Terminologie
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Erfahren Sie, wie die Controller-Bedingungen auf Ihr Storage Array zutreffen.
+
+[cols="1a,3a"]
+|===
+| Komponente | Beschreibung 
+
+
+ a| 
+Controller
+ a| 
+Ein Controller besteht aus einer Hauptplatine, Firmware und Software. Sie steuert die Laufwerke und implementiert die Funktionen von System Manager.
+
+
+
+ a| 
+Controller-Shelf
+ a| 
+Ein Controller-Shelf enthält einen Satz von Laufwerken und einen oder mehrere Controller-Behälter. Ein Controller-Behälter enthält die Controller, Host-Schnittstellenkarten (HICs) und Batterien.
+
+
+
+ a| 
+DHCP
+ a| 
+Dynamic Host Configuration Protocol (DHCP) ist ein Protokoll, das in IP-Netzwerken (Internet Protocol) zur dynamischen Verteilung von Netzwerkkonfigurationsparametern, z. B. IP-Adressen, verwendet wird.
+
+
+
+ a| 
+DNS
+ a| 
+Domain Name System (DNS) ist ein Benennungssystem für Geräte, die mit dem Internet oder einem privaten Netzwerk verbunden sind. Der DNS-Server verwaltet ein Verzeichnis von Domain-Namen und übersetzt diese in Internet Protocol (IP)-Adressen.
+
+
+
+ a| 
+Duplexkonfigurationen
+ a| 
+Duplex ist eine Konfiguration mit zwei Controllern im Speicher-Array. Duplex-Systeme sind in Bezug auf Controller, logische Volume-Pfade und Disk-Pfade vollständig redundant. Sollte ein Controller ausfallen, übernimmt der andere Controller dessen I/O, um die Verfügbarkeit zu gewährleisten. Duplex-Systeme verfügen auch über redundante Lüfter und Netzteile.
+
+
+
+ a| 
+Vollduplex-/Halbduplex-Anschlüsse
+ a| 
+Vollduplex- und Halbduplex-Mode siehe Verbindungsmodi. Im Vollduplex-Modus können zwei Geräte gleichzeitig in beide Richtungen kommunizieren. Im Halbduplex-Modus können Geräte gleichzeitig in eine Richtung kommunizieren (ein Gerät sendet eine Nachricht, während das andere Gerät sie empfängt).
+
+
+
+ a| 
+HIC
+ a| 
+Eine Host Interface Card (HIC) kann optional in einem Controller-Behälter installiert werden. Host Ports, die in den Controller integriert sind, werden als Baseboard Host Ports bezeichnet. In die HIC integrierte Host Ports werden HIC Ports genannt.
+
+
+
+ a| 
+ICMP-PING-Antwort
+ a| 
+Internet Control Message Protocol (ICMP) ist ein Protokoll, das von Betriebssystemen vernetzter Computer zum Senden von Nachrichten verwendet wird. ICMP-Meldungen bestimmen, ob ein Host erreichbar ist und wie lange es dauert, bis Pakete von und zu diesem Host gelangen.
+
+
+
+ a| 
+MAC-Adresse
+ a| 
+Media Access Control Identifier (MAC-Adressen) werden vom Ethernet verwendet, um zwischen separaten logischen Kanälen zu unterscheiden, die zwei Ports auf derselben physischen Transportnetzwerkschnittstelle verbinden.
+
+
+
+ a| 
+Management- Client
+ a| 
+Ein Management-Client ist der Computer, auf dem ein Browser zum Zugriff auf System Manager installiert ist.
+
+
+
+ a| 
+MTU
+ a| 
+Eine Maximum Transmission Unit (MTU) ist das größte Paket oder den größten Frame, der in einem Netzwerk gesendet werden kann.
+
+
+
+ a| 
+NTP
+ a| 
+Network Time Protocol (NTP) ist ein Netzwerkprotokoll für die Uhrsynchronisierung zwischen Computersystemen in Datennetzwerken.
+
+
+
+ a| 
+Simplex-Konfigurationen
+ a| 
+Simplex ist eine Konfiguration mit einem Controller-Modul innerhalb des Speicher-Arrays. Ein simplex-System bietet keine Controller- oder Disk-Path-Redundanz, sondern redundante Lüfter und Netzteile.
+
+
+
+ a| 
+VLAN
+ a| 
+Ein Virtual Local Area Network (VLAN) ist ein logisches Netzwerk, das sich so verhält, als sei es physisch getrennt von anderen Netzwerken, die von denselben Geräten (Switches, Router usw.) unterstützt werden.
+
+|===

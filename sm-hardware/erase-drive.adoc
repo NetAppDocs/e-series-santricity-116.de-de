@@ -1,0 +1,64 @@
+---
+permalink: sm-hardware/erase-drive.html 
+sidebar: sidebar 
+keywords: erase, secure, enabled, drive, reuse, volume, group, pool, ssd cache, storage array 
+summary: Sie können ein sicheres Laufwerk löschen, sodass es in einer anderen Volume-Gruppe, einem Pool, SSD-Cache oder in einem anderen Storage-Array wiederverwendet werden kann. Durch dieses Verfahren werden die Sicherheitsattribute des Laufwerks zurückgesetzt und sichergestellt, dass die Daten nicht erneut gelesen werden können. 
+---
+= Sicheres Laufwerk löschen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können ein sicheres Laufwerk löschen, sodass es in einer anderen Volume-Gruppe, einem Pool, SSD-Cache oder in einem anderen Storage-Array wiederverwendet werden kann. Durch dieses Verfahren werden die Sicherheitsattribute des Laufwerks zurückgesetzt und sichergestellt, dass die Daten nicht erneut gelesen werden können.
+
+Das Secure-Enabled-Laufwerk muss sich im Status Unassigned befinden.
+
+Verwenden Sie die Option Secure Erase nur, wenn Sie alle Daten auf einem sicheren Laufwerk entfernen und die Sicherheitsattribute des Laufwerks zurücksetzen möchten.
+
+[CAUTION]
+====
+*Möglicher Datenverlust* -- der Secure Erase-Vorgang kann nicht rückgängig gemacht werden. Vergewissern Sie sich, dass Sie während des Verfahrens das richtige Laufwerk auswählen.
+
+====
+.Schritte
+. Wählen Sie *Hardware*.
+. Wenn die Grafik die Controller zeigt, klicken Sie auf *Vorderseite des Regals anzeigen*.
++
+Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
+
+. In den Filterfeldern können Sie alle sicher aktivierten und nicht zugewiesenen Laufwerke im Shelf anzeigen. Wählen Sie in den Dropdown-Listen *Laufwerke anzeigen, die...* sind, *Secure-Enabled* und *Unassigned* aus.
++
+[NOTE]
+====
+Wenn alle Laufwerke dieselben physischen Attribute verwenden, wird das Filterfeld *Laufwerke anzeigen, die...* sind, nicht angezeigt. Wenn alle Laufwerke dieselben logischen Attribute verwenden, wird das Filterfeld *Anywhere im Speicherarray* nicht angezeigt.
+
+In der Shelf-Ansicht werden nur die sicheren, nicht zugewiesenen Laufwerke angezeigt; alle anderen sind ausgegraut.
+
+====
+. Wählen Sie das sichere Laufwerk aus, das Sie löschen möchten.
++
+[CAUTION]
+====
+*Möglicher Datenverlust* -- stellen Sie sicher, dass Sie das richtige Laufwerk ausgewählt haben. Nach Abschluss des Vorgangs Secure Erase können Sie keine Daten wiederherstellen.
+
+====
++
+Das Kontextmenü des Laufwerks wird geöffnet.
+
+. Wählen Sie *Sicheres Löschen*.
++
+Die Option sicheres Löschen wird nur angezeigt, wenn Sie ein nicht zugewiesenes, sicheres Laufwerk auswählen.
+
++
+[NOTE]
+====
+Für NVMe-SED-Laufwerke müssen Sie die PSID angeben. Die PSID finden Sie auf dem Laufwerketikett. Dies ist notwendig, wenn Sie nicht über den Sicherungsschlüssel verfügen.
+
+====
+. Lesen Sie im Dialogfeld Secure Erase Drive die wichtigen Informationen zum Datenverlust.
+. Bestätigen Sie den Vorgang, und klicken Sie dann auf *Löschen*.
+
+
+Das Laufwerk kann nun in einer anderen Volume-Gruppe oder einem anderen Laufwerk-Pool oder in einem anderen Speicher-Array verwendet werden.

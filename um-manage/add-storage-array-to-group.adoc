@@ -1,0 +1,22 @@
+---
+permalink: um-manage/add-storage-array-to-group.html 
+sidebar: sidebar 
+keywords: add, storage, array, to, group, manage, 
+summary: Sie können einer vom Benutzer erstellten Gruppe einen oder mehrere Speicher-Arrays hinzufügen. 
+---
+= Fügen Sie Speicher-Array zur Gruppe hinzu
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können einer vom Benutzer erstellten Gruppe einen oder mehrere Speicher-Arrays hinzufügen.
+
+.Schritte
+. Wählen Sie in der Hauptansicht *Verwalten* aus, und wählen Sie dann die Gruppe aus, der Sie Speicher-Arrays hinzufügen möchten.
+. Wählen Sie Menü:Gruppen verwalten[Speicher-Arrays zu Gruppe hinzufügen].
+. Wählen Sie die Speicher-Arrays aus, die Sie der Gruppe hinzufügen möchten.
+. Klicken Sie Auf *Hinzufügen.*
+

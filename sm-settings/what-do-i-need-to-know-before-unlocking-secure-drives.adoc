@@ -1,0 +1,22 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-unlocking-secure-drives.html 
+sidebar: sidebar 
+keywords: unlock, data, secure, enable, migration, storage array, import, security, key 
+summary: Um die Daten von einem sicheren Laufwerk zu entsperren, das in ein neues Speicher-Array migriert wird, müssen Sie dessen Sicherheitsschlüssel importieren. 
+---
+= Was muss ich wissen, bevor sichere Laufwerke entsperrt werden?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um die Daten von einem sicheren Laufwerk zu entsperren, das in ein neues Speicher-Array migriert wird, müssen Sie dessen Sicherheitsschlüssel importieren.
+
+Beachten Sie vor dem Entsperren von sicheren Laufwerken die folgenden Richtlinien:
+
+* Das Ziel-Storage-Array (in dem Sie die Laufwerke verschieben) muss bereits über einen Sicherheitsschlüssel verfügen. Die migrierten Laufwerke werden erneut auf das Ziel-Storage-Array übertragen.
+* Bei den zu migrierenden Laufwerken kennen Sie die Security Key Identifier und den Passphrase, der der Sicherheitsschlüsseldatei entspricht.
+* Die Sicherheitsschlüsseldatei steht auf dem Management-Client zur Verfügung (das System mit einem Browser, der zum Zugriff auf System Manager verwendet wird).
+* Wenn Sie ein gesperrtes NVMe-Laufwerk zurücksetzen, müssen Sie die Sicherheits-ID des Laufwerks eingeben. Um die Sicherheits-ID zu finden, müssen Sie das Laufwerk physisch entfernen und die PSID-Zeichenfolge (maximal 32 Zeichen) auf dem Laufwerketikett suchen. Stellen Sie sicher, dass das Laufwerk neu installiert ist, bevor Sie den Vorgang starten.
+

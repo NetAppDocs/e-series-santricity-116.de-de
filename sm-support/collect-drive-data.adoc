@@ -1,0 +1,39 @@
+---
+permalink: sm-support/collect-drive-data.html 
+sidebar: sidebar 
+keywords: collect, log, data, drives, storage, array, send, file, technical, support, analysis, task 
+summary: Sie können Protokolldaten von allen Laufwerken in Ihrem Speicher-Array erfassen und die Datei zur Analyse an den technischen Support senden. 
+---
+= Erfassen von Laufwerkdaten
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Protokolldaten von allen Laufwerken in Ihrem Speicher-Array erfassen und die Datei zur Analyse an den technischen Support senden.
+
+Protokolldaten bestehen aus statistischen Informationen, die von jedem der Laufwerke in Ihrem Speicher-Array verwaltet werden. Der technische Support kann diese Informationen nutzen, um die Performance Ihrer Laufwerke zu analysieren und um eventuell vorhandene Probleme zu beheben.
+
+[NOTE]
+====
+Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgefordert werden.
+
+====
+.Schritte
+. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie *Collect Drive Data*.
++
+Es wird ein Dialogfeld mit allen Laufwerken im Speicher-Array angezeigt.
+
+. In der ersten Spalte der Tabelle können Sie entweder einzelne Laufwerke auswählen, für die Sie Daten sammeln möchten (aktivieren Sie das Kontrollkästchen neben jedem Laufwerk) oder alle Laufwerke auswählen (aktivieren Sie das Kontrollkästchen in der Tabellenüberschrift).
++
+Um bestimmte Laufwerke zu finden, können Sie eine der Spalten sortieren oder Zeichen in das Feld *Filter* eingeben.
+
+. Klicken Sie Auf *Collect*.
++
+Die Datei wird im Ordner Downloads für Ihren Browser mit dem Namen gespeichert `drive-data.7z`.
+
+. Folgen Sie den Anweisungen des technischen Supports, um die Datei an sie zu senden.
+

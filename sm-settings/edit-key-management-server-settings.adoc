@@ -1,0 +1,29 @@
+---
+permalink: sm-settings/edit-key-management-server-settings.html 
+sidebar: sidebar 
+keywords: configuration, external, key management, edit, server, settings, time 
+summary: Wenn Sie die externe Schlüsselverwaltung konfiguriert haben, können Sie die Einstellungen des Verschlüsselungsmanagementservers jederzeit anzeigen und bearbeiten. 
+---
+= Bearbeiten der Einstellungen des Verschlüsselungsmanagementservers
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie die externe Schlüsselverwaltung konfiguriert haben, können Sie die Einstellungen des Verschlüsselungsmanagementservers jederzeit anzeigen und bearbeiten.
+
+Externes Verschlüsselungsmanagement muss konfiguriert werden.
+
+.Schritte
+. Wählen Sie *menu:Einstellungen[Systeme]*.
+. Wählen Sie unter *Security Key Management* die Option *Key Management Server-Einstellungen anzeigen/bearbeiten* aus.
+. Bearbeiten Sie die Informationen in den folgenden Feldern:
++
+** *Key Management Server-Adresse* -- Geben Sie den vollständig qualifizierten Domänennamen oder die IP-Adresse (IPv4 oder IPv6) des Servers ein, der für die Schlüsselverwaltung verwendet wird.
+** *KMIP-Port-Nummer* -- Geben Sie die Portnummer ein, die für die Kommunikation mit dem Key Management Interoperability Protocol (KMIP) verwendet wird.
+
+
+. Klicken Sie Auf *Speichern*.
+

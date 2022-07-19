@@ -1,0 +1,53 @@
+---
+permalink: sm-settings/unlock-drives-using-an-internal-security-key.html 
+sidebar: sidebar 
+keywords: secure, enable, storage array, appropriate, importing, new storage, drive 
+summary: Wenn Sie sichere Laufwerke von einem Speicher-Array in ein anderes verschieben, müssen Sie den entsprechenden Sicherheitsschlüssel in das neue Speicher-Array importieren. Durch das Importieren des Schlüssels werden die Daten auf den Laufwerken freigeschaltet. 
+---
+= Entsperren Sie Laufwerke mit einem Sicherheitsschlüssel
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie sichere Laufwerke von einem Speicher-Array in ein anderes verschieben, müssen Sie den entsprechenden Sicherheitsschlüssel in das neue Speicher-Array importieren. Durch das Importieren des Schlüssels werden die Daten auf den Laufwerken freigeschaltet.
+
+.Bevor Sie beginnen
+* Das Ziel-Storage-Array (in dem Sie die Laufwerke verschieben) muss bereits einen Sicherheitsschlüssel konfiguriert haben. Die migrierten Laufwerke werden erneut auf das Ziel-Storage-Array übertragen.
+* Sie müssen den Sicherheitsschlüssel kennen, der mit den Laufwerken verknüpft ist, die Sie entsperren möchten.
+* Die Sicherheitsschlüsseldatei steht auf dem Management-Client zur Verfügung (das System mit einem Browser, der zum Zugriff auf System Manager verwendet wird). Wenn Sie die Laufwerke in ein Storage-Array verschieben, das von einem anderen System gemanagt wird, müssen Sie die Sicherheitsschlüsseldatei auf diesen Management-Client verschieben.
+
+
+In dieser Aufgabe wird beschrieben, wie Daten in sicheren Laufwerken entsperrt werden, die von einem Speicher-Array entfernt und in einem anderen neu installiert wurden. Sobald das Array die Laufwerke erkannt hat, wird ein Zustand „Achtung erforderlich“ sowie der Status „Sicherheitsschlüssel erforderlich“ für diese neu gelegenen Laufwerke angezeigt. Sie können Laufwerkdaten entsperren, indem Sie ihren Sicherheitsschlüssel in das Storage-Array importieren. Während dieses Vorgangs wählen Sie die Sicherheitsschlüsseldatei aus und geben den Passphrase für den Schlüssel ein.
+
+[NOTE]
+====
+Der Passphrase entspricht nicht dem Administratorkennwort des Speicherarrays.
+
+====
+Wenn andere sichere Laufwerke im neuen Speicher-Array installiert sind, verwenden sie möglicherweise einen anderen Sicherheitsschlüssel als den, den Sie importieren. Während des Importvorgangs wird der alte Sicherheitsschlüssel nur verwendet, um die Daten für die zu installierenden Laufwerke freizuschalten. Wenn die Entsperrung erfolgreich ist, werden die neu installierten Laufwerke erneut auf den Sicherheitsschlüssel des Ziel-Speicher-Arrays codiert.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie unter * Security Key Management* * * Secure Drives entsperren* aus.
++
+Das Dialogfeld Sichere Laufwerke entsperren wird geöffnet. Alle Laufwerke, für die ein Sicherheitsschlüssel erforderlich ist, sind in der Tabelle aufgeführt.
+
+. *Optional:* mit der Maus über eine Laufwerksnummer können Sie die Position des Laufwerks (Regalnummer und Einschubnummer) sehen.
+. Klicken Sie auf *Durchsuchen* und wählen Sie dann die Sicherheitsschlüsseldatei aus, die dem Laufwerk entspricht, das Sie entsperren möchten.
++
+Die ausgewählte Schlüsseldatei wird im Dialogfeld angezeigt.
+
+. Geben Sie den Passphrase ein, der dieser Schlüsseldatei zugeordnet ist.
++
+Die eingegebenen Zeichen sind maskiert.
+
+. Klicken Sie Auf *Entsperren*.
++
+Wenn der Entsperrvorgang erfolgreich ist, wird im Dialogfeld „die zugeordneten sicheren Laufwerke wurden entsperrt“ angezeigt.
+
+
+
+Wenn alle Laufwerke gesperrt und dann entsperrt sind, wird jeder Controller im Speicher-Array neu gestartet. Wenn sich jedoch bereits einige nicht freigeschaltete Laufwerke im Ziel-Speicher-Array befinden, werden die Controller nicht neu gestartet.

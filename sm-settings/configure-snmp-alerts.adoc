@@ -1,0 +1,67 @@
+---
+permalink: sm-settings/configure-snmp-alerts.html 
+sidebar: sidebar 
+keywords: configuration, snmp alerts, identification, one server, storage array, snmp traps, community name, ip address 
+summary: 'Um SNMP-Warnungen (Simple Network Management Protocol) zu konfigurieren, müssen Sie mindestens einen Server identifizieren, auf dem der Ereignismonitor des Speicherarrays SNMP-Traps senden kann. Die Konfiguration erfordert einen Community-Namen und eine IP-Adresse für den Server.' 
+---
+= Konfigurieren Sie Communities und Ziele für SNMP-Benachrichtigungen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um SNMP-Warnungen (Simple Network Management Protocol) zu konfigurieren, müssen Sie mindestens einen Server identifizieren, auf dem der Ereignismonitor des Speicherarrays SNMP-Traps senden kann. Die Konfiguration erfordert einen Community-Namen und eine IP-Adresse für den Server.
+
+.Bevor Sie beginnen
+* Ein Netzwerkserver muss mit einer SNMP-Dienstanwendung konfiguriert sein. Sie benötigen die Netzwerkadresse dieses Servers (entweder eine IPv4- oder eine IPv6-Adresse), damit der Ereignismonitor Trap-Meldungen an diese Adresse senden kann. Sie können mehrere Server verwenden (bis zu 10 Server sind zulässig).
+* Es muss ein Community-Name erstellt werden, der nur aus druckbaren ASCII-Zeichen besteht. Der Community-Name, ein String, der wie ein Kennwort für die Netzwerkserver fungiert, wird in der Regel von einem Netzwerkadministrator erstellt. Es können bis zu 256 Communities erstellt werden.
+* Die Management Information Base (MIB)-Datei wurde kopiert und mit der SNMP-Dienst-Anwendung auf dem Server kompiliert. Diese MIB-Datei definiert die Daten, die überwacht und verwaltet werden.
++
+Wenn Sie nicht über die MIB-Datei, können Sie sie von der NetApp Support-Website erhalten:
+
++
+** Gehen Sie zu https://mysupport.netapp.com/site/["NetApp Support"^].
+** Klicken Sie Auf *Downloads*.
+** Klicken Sie Auf *Software*.
+** Suchen Sie Ihre Verwaltungssoftware (z. B. SANtricity-System-Manager), und klicken Sie dann rechts auf *Los!*.
+** Klicken Sie auf der neuesten Version auf**Anzeigen & Download**.
+** Klicken Sie unten auf der Seite auf *Weiter*.
+** Akzeptieren Sie die EULA.
+** Scrollen Sie nach unten, bis Sie *MIB-Datei für SNMP-Traps* sehen, und klicken Sie dann auf den Link, um die Datei herunterzuladen.
+
+
+
+
+Diese Aufgabe beschreibt, wie Sie den SNMP-Server für Trap-Ziele identifizieren und anschließend Ihre Konfiguration testen.
+
+.Schritte
+. Wählen Sie *menu:Einstellungen[Alarme]*.
+. Wählen Sie die Registerkarte *SNMP* aus.
++
+Wenn noch keine Community konfiguriert ist, wird auf der Registerkarte SNMP „Configure Communities“ angezeigt.
+
+. Wählen Sie * Communities Konfigurieren*.
++
+Das Dialogfeld *Configure Communities* wird geöffnet.
+
+. Geben Sie im Feld *Community Name* eine oder mehrere Community-Strings für die Netzwerkserver ein, und klicken Sie dann auf *Speichern*.
++
+Auf der Seite Warnungen wird „Fallziele hinzufügen“ angezeigt.
+
+. Wählen Sie *Trap-Ziele Hinzufügen*.
++
+Das Dialogfeld *Trap-Ziele hinzufügen* wird geöffnet.
+
+. Geben Sie ein oder mehrere Trap-Ziele ein, wählen Sie die zugehörigen Community-Namen aus, und klicken Sie dann auf *Hinzufügen*.
++
+** *Trap-Ziel* -- Geben Sie eine IPv4- oder IPv6-Adresse des Servers ein, auf dem ein SNMP-Dienst ausgeführt wird.
+** *Community-Name* -- Wählen Sie im Dropdown-Menü den Community-Namen für dieses Trap-Ziel aus. (Wenn Sie nur einen Community-Namen definiert haben, wird der Name bereits in diesem Feld angezeigt.)
+** *Authentifizierungsfehler senden Trap* -- Wählen Sie diese Option (das Kontrollkästchen) aus, wenn Sie das Trap-Ziel benachrichtigen möchten, wenn eine SNMP-Anfrage aufgrund eines nicht erkannten Community-Namens abgelehnt wird. Nach dem Klicken auf *Hinzufügen* werden die Trap-Ziele und die zugehörigen Community-Namen auf der Seite *SNMP* auf der Registerkarte *Alarme* angezeigt.
+
+
+. Um sicherzustellen, dass ein Trap gültig ist, wählen Sie ein Trap-Ziel aus der Tabelle aus, und klicken Sie dann auf *Trap-Ziel testen*, um einen Test-Trap an die konfigurierte Adresse zu senden.
+
+
+Der Ereignismonitor sendet SNMP-Traps an den/die Server(s), wenn ein alertable Ereignis auftritt.

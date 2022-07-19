@@ -1,0 +1,104 @@
+---
+permalink: sm-hardware/hardware-terminology.html 
+sidebar: sidebar 
+keywords: hardware, terms, apply, storage 
+summary: Erfahren Sie, wie die Hardwarebedingungen auf Ihr Storage Array angewendet werden. 
+---
+= Terminologie der Hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Erfahren Sie, wie die Hardwarebedingungen auf Ihr Storage Array angewendet werden.
+
+[cols="1a,3a"]
+|===
+| Komponente | Beschreibung 
+
+
+ a| 
+Storage Array erledigen
+ a| 
+Ein Storage-Array umfasst Shelfs, Controller, Laufwerke, Software und Firmware.
+
+
+
+ a| 
+Shelf
+ a| 
+Ein Shelf ist ein Gehäuse, das in einem Schrank oder Rack installiert ist. Er enthält die Hardwarekomponenten für das Storage-Array. Es gibt zwei Typen von Shelfs: Ein Controller-Shelf und ein Festplatten-Shelf. Ein Controller Shelf enthält Controller und Laufwerke. Ein Festplatten-Shelf enthält ein-/Ausgabemodule (IOMs) und Laufwerke.
+
+
+
+ a| 
+Controller
+ a| 
+Ein Controller besteht aus einer Hauptplatine, Firmware und Software. Sie steuert die Laufwerke und implementiert die Funktionen von System Manager.
+
+
+
+ a| 
+Laufwerk
+ a| 
+Ein Laufwerk ist ein elektromagnetisches mechanisches Gerät oder ein Solid State-Speichergerät, das die physischen Speichermedien für Daten bereitstellt.
+
+
+
+ a| 
+Bucht
+ a| 
+Ein Schacht ist ein Steckplatz im Shelf, in dem ein Laufwerk oder eine andere Komponente installiert ist.
+
+
+
+ a| 
+Festplatten-Shelf
+ a| 
+Ein Festplatten-Shelf, auch als Erweiterungs-Shelf bezeichnet, enthält mehrere Laufwerke und zwei Input/Output-Module (IOMs). Die IOMs enthalten SAS-Ports, die ein Festplatten-Shelf mit einem Controller-Shelf oder anderen Festplatten-Shelfs verbinden.
+
+[NOTE]
+====
+Laufwerke-Shelfs sind für EF600 Storage-Systeme nicht verfügbar.
+
+====
+
+
+ a| 
+Controller-Shelf
+ a| 
+Ein Controller-Shelf enthält einen Satz von Laufwerken und einen oder mehrere Controller-Behälter. Ein Controller-Behälter enthält die Controller, Host-Schnittstellenkarten (HICs) und Batterien.
+
+
+
+ a| 
+Power-/Lüfterbehälter
+ a| 
+Ein Power-/Lüfterbehälter ist eine Baugruppe, die in ein Regal gleist. Sie umfasst ein Netzteil und einen integrierten Lüfter.
+
+
+
+ a| 
+IOM (ESM)
+ a| 
+Ein IOM ist ein ein ein ein-/Ausgabemodul, das SAS-Ports zum Anschließen des Festplatten-Shelf an das Controller-Shelf enthält.
+
+[NOTE]
+====
+Laufwerke-Shelfs sind für EF600 Storage-Systeme nicht verfügbar.
+
+====
+[NOTE]
+====
+In früheren Controller-Modellen wurde das IOM als Environmental Service Module (ESM) bezeichnet.
+
+====
+
+
+ a| 
+SFP
+ a| 
+Ein SFP ist ein Small Form-factor Pluggable (SFP) Transceiver.
+
+|===

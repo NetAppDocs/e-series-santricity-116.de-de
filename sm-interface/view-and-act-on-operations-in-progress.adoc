@@ -1,0 +1,37 @@
+---
+permalink: sm-interface/view-and-act-on-operations-in-progress.html 
+sidebar: sidebar 
+keywords: view, action, long-run, operations, progress 
+summary: Verwenden Sie die Seite „Vorgänge in Bearbeitung“, um bei lang laufenden Vorgängen Aktionen anzuzeigen und Maßnahmen zu ergreifen. 
+---
+= Vorgänge in Bearbeitung anzeigen und umsetzen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Verwenden Sie die Seite „Vorgänge in Bearbeitung“, um bei lang laufenden Vorgängen Aktionen anzuzeigen und Maßnahmen zu ergreifen.
+
+Für jeden Vorgang, der auf der Seite „Vorgänge in Bearbeitung“ aufgeführt ist, werden ein Prozentsatz der Fertigstellung und die geschätzte verbleibende Zeit bis zum Abschluss des Vorgangs angezeigt. In einigen Fällen können Sie einen Vorgang anhalten oder eine höhere oder niedrigere Priorität zuweisen. Sie können auch einen abgeschlossenen Kopiervorgang für Volumes aus der Liste löschen.
+
+.Schritte
+. Wählen Sie auf der Seite *Home* die Option *Vorgänge in Bearbeitung anzeigen*.
++
+Die Seite *Operationen in Bearbeitung* wird angezeigt.
+
+. Verwenden Sie die Links in der Spalte *Aktionen*, um die Priorität für einen Vorgang zu beenden oder zu ändern.
++
+[CAUTION]
+====
+Lesen Sie alle in den Dialogfeldern angegebenen Vorsichtstexte, insbesondere wenn Sie einen Vorgang unterbrechen.
+
+====
++
+Sie können den Vorgang einer Volume-Kopie anhalten oder deren Priorität ändern.
+
+. Sobald ein Vorgang zur Volume-Kopie abgeschlossen ist, können Sie *Löschen* wählen, um es aus der Liste zu entfernen.
++
+Oben auf der Seite *Home* werden eine Informationsmeldung und ein gelbes Schraubenschlüsselsymbol angezeigt, wenn der Vorgang abgeschlossen ist. Diese Nachricht enthält einen Link, mit dem Sie die Operation auf der Seite *Operationen in Bearbeitung* löschen können.
+
+

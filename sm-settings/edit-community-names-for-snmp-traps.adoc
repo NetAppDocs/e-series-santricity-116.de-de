@@ -1,0 +1,39 @@
+---
+permalink: sm-settings/edit-community-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: edit, community, names, snmp traps, destination 
+summary: Sie können Community-Namen für SNMP-Traps bearbeiten und einen anderen Community-Namen einem SNMP-Trap-Ziel zuordnen. 
+---
+= Community-Namen für SNMP-Traps bearbeiten
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Community-Namen für SNMP-Traps bearbeiten und einen anderen Community-Namen einem SNMP-Trap-Ziel zuordnen.
+
+Es muss ein Community-Name erstellt werden, der nur aus druckbaren ASCII-Zeichen besteht. Der Community-Name, ein String, der wie ein Kennwort für die Netzwerkserver fungiert, wird von einem Netzwerkadministrator erstellt.
+
+.Schritte
+. Wählen Sie *menu:Einstellungen[Alarme]*.
+. Wählen Sie die Registerkarte *SNMP* aus.
++
+Die Trap-Ziele und Community-Namen werden in der Tabelle angezeigt.
+
+. Bearbeiten Sie Community-Namen wie folgt:
++
+** Um einen Community-Namen zu bearbeiten, wählen Sie *Communities konfigurieren*. Geben Sie den neuen Community-Namen ein und klicken Sie dann auf *Speichern*. Community-Namen können nur aus druckbaren ASCII-Zeichen bestehen.
+** Um einen Community-Namen einem neuen Trap-Ziel zuzuordnen, wählen Sie den Community-Namen aus der Tabelle aus, und klicken Sie dann rechts auf das Symbol *Bearbeiten* (Bleistift). Wählen Sie im Dropdown-Menü Community Name einen neuen Community-Namen für ein SNMP-Trap-Ziel aus und klicken Sie dann auf das Symbol *Speichern* (Häkchen).
++
+[NOTE]
+====
+Wenn Sie die Änderungen abbrechen möchten, wählen Sie das Symbol *Abbrechen* (X).
+
+====
+
+
+
+
+Die Registerkarte *SNMP* der Seite *Alerts* zeigt die aktualisierten Communities an.

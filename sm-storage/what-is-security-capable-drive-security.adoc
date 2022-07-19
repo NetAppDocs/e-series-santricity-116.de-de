@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/what-is-security-capable-drive-security.html 
+sidebar: sidebar 
+keywords: drive, security, feature, prevent, unauthorized, access, data, secure, enable, remove, storage, array, either, full, disk, encryption, federal, information, processing, standard 
+summary: 'Drive Security ist eine Funktion, die bei Entfernung aus dem Speicher-Array unberechtigten Zugriff auf Daten auf sicheren Laufwerken verhindert. Dabei können es sich entweder um vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE)-Laufwerke oder um FIPS-Laufwerke (Federal Information Processing Standard) handeln.' 
+---
+= Was ist sicher-fähig (Drive Security)?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Drive Security ist eine Funktion, die bei Entfernung aus dem Speicher-Array unberechtigten Zugriff auf Daten auf sicheren Laufwerken verhindert. Dabei können es sich entweder um vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE)-Laufwerke oder um FIPS-Laufwerke (Federal Information Processing Standard) handeln.

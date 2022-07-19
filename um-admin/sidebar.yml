@@ -1,0 +1,26 @@
+---
+section: um-admin
+title: Hauptschnittstelle
+entries:
+- title: Übersicht über Unified Manager
+  entries:
+  - title: Konzepte
+    entries:
+    - title: Schnittstellenübersicht
+      url: "/um-admin/home-page-unified.html"
+    - title: Unterstützte Browser
+      url: "/um-admin/supported-browsers-unified.html"
+- title: Unified Manager Administration
+  entries:
+  - title: Konzepte
+    entries:
+    - title: Schutz von Administratorpasswörtern
+      url: "/um-admin/administrator-password-protection-unified.html"
+  - title: Anleitungen
+    entries:
+    - title: Ändern Sie das Admin-Passwort
+      url: "/um-admin/change-admin-password-unified.html"
+    - title: Ändern Sie die Passwörter für das Speicherarray
+      url: "/um-admin/change-storage-array-passwords.html"
+    - title: Verwalten von Sitzungszeitungen
+      url: "/um-admin/manage-session-timeouts-unified.html"

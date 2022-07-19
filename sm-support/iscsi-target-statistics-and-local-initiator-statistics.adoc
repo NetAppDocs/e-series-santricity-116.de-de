@@ -1,0 +1,88 @@
+---
+permalink: sm-support/iscsi-target-statistics-and-local-initiator-statistics.html 
+sidebar: sidebar 
+keywords: target, statistics, local, initiator, statistics, select, target 
+summary: ISCSI-Zielstatistiken und lokale Initiatorstatistiken 
+---
+= ISCSI-Zielstatistiken und lokale Initiatorstatistiken
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Wenn Sie Zielstatistiken (Protokoll) oder Statistiken des lokalen Initiators (Protokoll) auswählen, werden die folgenden Statistiken angezeigt. Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen.
+
+[cols="2*"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+SL
+ a| 
+Erfolgreiche iSCSI-Anmeldungen
+
+
+
+ a| 
+UL
+ a| 
+Anzahl der iSCSI-Anmeldungen war nicht erfolgreich
+
+
+
+ a| 
+SA
+ a| 
+Erfolgreiche iSCSI-Authentifizierungszahl (wenn die Authentifizierung aktiviert ist)
+
+
+
+ a| 
+UA
+ a| 
+ISCSI-Authentifizierungszahl nicht erfolgreich (bei aktivierter Authentifizierung)
+
+
+
+ a| 
+PDU
+ a| 
+Korrigieren Sie die Anzahl der verarbeiteten iSCSI-PDUs
+
+
+
+ a| 
+HDE
+ a| 
+ISCSI-PDUs mit Header-Digest-Fehleranzahl
+
+
+
+ a| 
+DDE
+ a| 
+ISCSI-PDUs mit Daten-Digest-Fehleranzahl
+
+
+
+ a| 
+RE
+ a| 
+PDUs mit iSCSI-Protokollfehlern zählen
+
+
+
+ a| 
+UST
+ a| 
+Unerwartete Anzahl der Anschlüsse für iSCSI-Sitzungen
+
+
+
+ a| 
+UCT
+ a| 
+Unerwartete Anzahl der Beendigung der iSCSI-Verbindung
+
+|===

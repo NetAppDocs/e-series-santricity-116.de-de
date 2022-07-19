@@ -1,0 +1,110 @@
+---
+permalink: sm-hardware/drive-terminology.html 
+sidebar: sidebar 
+keywords: drive, apply, storage array 
+summary: Erfahren Sie, wie die Laufwerkbedingungen auf Ihr Storage Array angewendet werden. 
+---
+= Terminologie für Laufwerke
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Erfahren Sie, wie die Laufwerkbedingungen auf Ihr Storage Array angewendet werden.
+
+[cols="1a,3a"]
+|===
+| Komponente | Beschreibung 
+
+
+ a| 
+DA
+ a| 
+Data Assurance (da) ist eine Funktion, die Fehler überprüft und korrigiert, die auftreten können, wenn Daten durch die Controller zu den Laufwerken übertragen werden. Data Assurance kann auf Pool- oder Volume-Gruppenebene aktiviert werden, wobei Hosts über eine da-fähige I/O-Schnittstelle wie Fibre Channel verfügen.
+
+
+
+ a| 
+Laufwerkssicherheit
+ a| 
+Laufwerkssicherheit ist eine Funktion des Storage Arrays, die eine zusätzliche Sicherheitsschicht bietet – entweder mit vollständigen Festplatten-Verschlüsselung (FDE) oder FIPS-Laufwerken (Federal Information Processing Standard). Wenn diese Laufwerke zusammen mit der Sicherheitsfunktion des Laufwerks verwendet werden, benötigen sie einen Sicherheitsschlüssel für den Zugriff auf ihre Daten. Wenn die Laufwerke physisch aus dem Array entfernt werden, können sie erst betrieben werden, wenn sie in einem anderen Array installiert sind. Zu diesem Zeitpunkt befinden sie sich in einem Sicherheitsstatus, bis der richtige Sicherheitsschlüssel bereitgestellt wird.
+
+
+
+ a| 
+Festplatten-Shelf
+ a| 
+Ein Festplatten-Shelf, auch als Erweiterungs-Shelf bezeichnet, enthält mehrere Laufwerke und zwei Input/Output-Module (IOMs). Die IOMs enthalten SAS-Ports, die ein Festplatten-Shelf mit einem Controller-Shelf oder anderen Festplatten-Shelfs verbinden.
+
+
+
+ a| 
+DULBE
+ a| 
+Dezugewiesener oder nicht geschriebener logischer Blockfehler (DULBE) ist eine Option auf NVMe-Laufwerken, mit der ein Storage-Array Blöcke abbildet, die Teil eines Volumes sind. Die Auslagerung von Blöcken auf einem Laufwerk kann den Zeitaufwand für die Initialisierung von Volumes erheblich verkürzen. Zudem können Hosts mithilfe des NVMe-Datensatzmanagements logische Blöcke im Volume deallokalisieren.
+
+
+
+ a| 
+FDE-Laufwerke
+ a| 
+Vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE) ermöglicht die Verschlüsselung auf Festplattenlaufwerken auf Hardware-Ebene. Die Festplatte enthält einen ASIC-Chip, der Daten während des Schreibvorgangs verschlüsselt und die Daten beim Lesen entschlüsselt.
+
+
+
+ a| 
+FIPS-Laufwerke
+ a| 
+FIPS-Laufwerke verwenden Federal Information Processing Standards (FIPS) 140-2 Level 2. Es handelt sich im Wesentlichen um FDE-Laufwerke, die den Standards der US-Regierung entsprechen, um solide Verschlüsselungsalgorithmen und -Methoden sicherzustellen. FIPS-Laufwerke haben höhere Sicherheitsstandards als FDE-Laufwerke.
+
+
+
+ a| 
+HDD
+ a| 
+Festplattenlaufwerke (HDDs) sind Datenspeicher-Geräte, die rotierende Metallplatten mit einer magnetischen Beschichtung verwenden.
+
+
+
+ a| 
+Hot-Spare-Laufwerke
+ a| 
+Hot Spares fungieren als Standby-Laufwerke in RAID 1-, RAID 5- oder RAID 6-Volume-Gruppen. Es handelt sich dabei um voll funktionsfähige Laufwerke, die keine Daten enthalten. Wenn ein Laufwerk in der Volume-Gruppe ausfällt, rekonstruiert der Controller die Daten vom ausgefallenen Laufwerk automatisch auf eine Hot Spare-Festplatte.
+
+
+
+ a| 
+NVMe
+ a| 
+Non-Volatile Memory Express (NVMe) ist eine Schnittstelle, die für Flash-basierte Storage-Geräte wie SSD-Laufwerke konzipiert wurde. NVMe reduziert den I/O-Overhead und beinhaltet Performance-Verbesserungen im Vergleich zu vorherigen Schnittstellen für logische Geräte.
+
+
+
+ a| 
+SAS
+ a| 
+Serial Attached SCSI (SAS) ist ein Point-to-Point-Protokoll, bei dem Controller direkt mit Festplatten verbunden werden.
+
+
+
+ a| 
+Secure-fähige Laufwerke
+ a| 
+Sichere Laufwerke können entweder vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE) oder FIPS-Laufwerke (Federal Information Processing Standard) sein, die Daten während des Schreibvorgangs verschlüsseln und Daten während Lesevorgängen entschlüsseln. Diese Laufwerke gelten als sicher-_fähig_, da sie mit der Sicherheitsfunktion des Laufwerks für zusätzliche Sicherheit verwendet werden können. Wenn die Laufwerkssicherheitsfunktion für Volume-Gruppen und -Pools aktiviert ist, die mit diesen Laufwerken verwendet werden, werden die Laufwerke sicher-_Enabled_.
+
+
+
+ a| 
+Secure-Enabled Laufwerke
+ a| 
+Secure-Enabled-Laufwerke werden mit der Drive Security-Funktion verwendet. Wenn Sie die Laufwerkssicherheitsfunktion aktivieren und dann Laufwerksicherheit auf einem Pool oder einer Volume-Gruppe auf Secure-_fähigen_-Laufwerken anwenden, werden die Laufwerke sicher___-aktiviert____. Lese- und Schreibzugriff ist nur über einen Controller verfügbar, der mit dem korrekten Sicherheitsschlüssel konfiguriert ist. Diese zusätzliche Sicherheit verhindert einen nicht autorisierten Zugriff auf die Daten auf einem Laufwerk, das physisch vom Storage-Array entfernt wird.
+
+
+
+ a| 
+SSD
+ a| 
+Solid State Disks (SSDs) sind Daten-Storage-Geräte, die Solid State Memory (Flash) verwenden, um Daten dauerhaft zu speichern. SSDs bieten herkömmliche Festplatten an und sind mit denselben Schnittstellen verfügbar wie die Festplatten.
+
+|===

@@ -1,0 +1,59 @@
+---
+permalink: sm-support/drive-firmware-upgrades.html 
+sidebar: sidebar 
+keywords: drive, firmware, control, low, level, operating, characteristics, periodically, manufacturer, release, update, add, new, features, improve, performance, fix, detects 
+summary: Die Laufwerk-Firmware steuert die betrieblichen Eigenschaften eines Laufwerks auf niedriger Ebene. Die Hersteller der Laufwerke veröffentlichen regelmäßig Updates zu Laufwerk-Firmware, um neue Funktionen hinzuzufügen, die Performance zu verbessern und Fehler zu beheben. 
+---
+= Upgrades der Laufwerk-Firmware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Laufwerk-Firmware steuert die betrieblichen Eigenschaften eines Laufwerks auf niedriger Ebene. Die Hersteller der Laufwerke veröffentlichen regelmäßig Updates zu Laufwerk-Firmware, um neue Funktionen hinzuzufügen, die Performance zu verbessern und Fehler zu beheben.
+
+
+
+== Upgrades der Online- und Offline-Laufwerk-Firmware
+
+Es gibt zwei Arten von Upgrade-Methoden für die Festplatten-Firmware: Online und offline.
+
+
+
+== Online
+
+Während eines Online-Upgrades werden Festplatten nacheinander aktualisiert. Das Storage-Array verarbeitet die I/O-Verarbeitung während des Upgrades weiter. Sie müssen keine I/O-Vorgänge beenden Wenn ein Laufwerk eine Online-Aktualisierung durchführen kann, wird die Online-Methode automatisch verwendet.
+
+Laufwerke, die ein Online-Upgrade durchführen können, umfassen Folgendes:
+
+* Laufwerke in einem optimalen Pool
+* Laufwerke in einer optimalen redundanten Volume-Gruppe (RAID 1, RAID 5 und RAID 6)
+* Nicht zugewiesene Laufwerke
+* Standby-Hot-Spare-Laufwerke
+
+
+Ein Online-Upgrade der Laufwerk-Firmware kann mehrere Stunden in Anspruch nehmen, sodass dem Storage Array potenzielle Volume-Ausfälle zur Verfügung stehen. In folgenden Fällen kann es zu einem Volumenausfall kommen:
+
+* In einer RAID 1- oder RAID 5-Volume-Gruppe fällt ein Laufwerk aus, während ein anderes Laufwerk in der Volume-Gruppe aktualisiert wird.
+* In einem RAID 6 Pool oder einer Volume-Gruppe fallen zwei Laufwerke aus, während ein anderes Laufwerk im Pool oder in der Volume-Gruppe aktualisiert wird.
+
+
+
+
+== Offline (parallel)
+
+Bei einem Offline-Upgrade werden alle Laufwerke desselben Laufwerktyps gleichzeitig aktualisiert. Diese Methode erfordert das Stoppen der I/O-Aktivität zu den Volumes, die mit den ausgewählten Laufwerken verknüpft sind. Da mehrere Laufwerke gleichzeitig aktualisiert werden können (parallel), wird die Ausfallzeit insgesamt deutlich reduziert. Wenn ein Laufwerk nur eine Offline-Aktualisierung durchführen kann, wird die Offline-Methode automatisch verwendet.
+
+Die folgenden Laufwerke MÜSSEN die Offline-Methode verwenden:
+
+* Laufwerke in einer nicht redundanten Volume-Gruppe (RAID 0)
+* Laufwerke in einem nicht optimalen Pool oder einer Volume-Gruppe
+* Laufwerke im SSD-Cache
+
+
+
+
+== Kompatibilität
+
+Jede Laufwerk-Firmware-Datei enthält Informationen über den Laufwerkstyp, auf dem die Firmware ausgeführt wird. Sie können die angegebene Firmware-Datei nur auf ein kompatibles Laufwerk herunterladen. System Manager überprüft während des Upgrades die Kompatibilität automatisch.

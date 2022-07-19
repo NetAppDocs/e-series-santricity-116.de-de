@@ -1,0 +1,234 @@
+---
+permalink: sm-support/mac-transmit-and-mac-receive-statistics.html 
+sidebar: sidebar 
+keywords: transmit, receive, statistics, ethernet, transmit 
+summary: Statistiken ZUM SENDEN UND MAC-Empfang VON MAC 
+---
+= Statistiken ZUM SENDEN UND MAC-Empfang VON MAC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Wenn Sie Ethernet-MAC-Statistiken auswählen, werden diese MAC-Sendestatistiken angezeigt. Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen.
+
+[cols="2*"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+F
+ a| 
+Bildanzahl
+
+
+
+ a| 
+B
+ a| 
+Byte-Anzahl
+
+
+
+ a| 
+MF
+ a| 
+Multicast-Frame-Anzahl
+
+
+
+ a| 
+BF
+ a| 
+Anzahl der Broadcast-Frames
+
+
+
+ a| 
+PF
+ a| 
+Umstellungsunterbrechung
+
+
+
+ a| 
+CF
+ a| 
+Kontrolle der Frame-Anzahl
+
+
+
+ a| 
+FDF
+ a| 
+Frame-Deferral-Anzahl
+
+
+
+ a| 
+GEFÜTTERT
+ a| 
+Überzähligen Rückstellwert einrahmen
+
+
+
+ a| 
+FLC
+ a| 
+Anzahl verspäteter Kollisionen erfassen
+
+
+
+ a| 
+FA
+ a| 
+Anzahl der Abbruchbilder
+
+
+
+ a| 
+FSC
+ a| 
+Einzelkollisionszählung im Rahmen
+
+
+
+ a| 
+FMC
+ a| 
+Mehrere Kollisionen erfassen
+
+
+
+ a| 
+FC
+ a| 
+Kollisionszählung des Rahmens
+
+
+
+ a| 
+FDR
+ a| 
+Anzahl der Einzelbilder gelöscht
+
+
+
+ a| 
+JF.
+ a| 
+Anzahl Jumbo-Frames
+
+|===
+Wenn Sie Ethernet-MAC-Statistiken auswählen, werden diese MAC-Empfangsstatistiken angezeigt.
+
+[cols="2*"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+F
+ a| 
+Bildanzahl
+
+
+
+ a| 
+B
+ a| 
+Byte-Anzahl
+
+
+
+ a| 
+MF
+ a| 
+Multicast-Frame-Anzahl
+
+
+
+ a| 
+BF
+ a| 
+Anzahl der Broadcast-Frames
+
+
+
+ a| 
+PF
+ a| 
+Umstellungsunterbrechung
+
+
+
+ a| 
+CF
+ a| 
+Kontrolle der Frame-Anzahl
+
+
+
+ a| 
+FLE.
+ a| 
+Fehleranzahl der Frame-Länge
+
+
+
+ a| 
+FD.
+ a| 
+Anzahl der Einzelbilder gelöscht
+
+
+
+ a| 
+FCRCE
+ a| 
+Frame CRC-Fehleranzahl
+
+
+
+ a| 
+GEBÜHR
+ a| 
+Fehleranzahl der Frame-Codierung
+
+
+
+ a| 
+LFE
+ a| 
+Große Frame-Fehleranzahl
+
+
+
+ a| 
+SFE
+ a| 
+Fehleranzahl bei kleinem Frame
+
+
+
+ a| 
+J
+ a| 
+Jabber zählen
+
+
+
+ a| 
+UCC
+ a| 
+Unbekannte Anzahl der Kontrollrahmen
+
+
+
+ a| 
+CSE
+ a| 
+Fehleranzahl bei der Carrier-Sense
+
+|===
