@@ -14,6 +14,7 @@ summary: Sie können die Einstellungen für eine Snapshot-Gruppe ändern, um ihr
 [role="lead"]
 Sie können die Einstellungen für eine Snapshot-Gruppe ändern, um ihren Namen zu ändern, die Einstellungen für das automatische Löschen, die maximale Anzahl zulässiger Snapshot-Images, den Prozentpunkt, an dem System Manager eine Benachrichtigung über reservierte Kapazität sendet, oder die Richtlinie, die verwendet werden soll, wenn die reservierte Kapazität den maximal definierten Prozentsatz erreicht.
 
+.Bevor Sie beginnen
 Während der Erstellung einer Snapshot-Gruppe wird reservierte Kapazität erstellt, um die Daten aller Snapshot-Images der Gruppe zu speichern.
 
 .Schritte
@@ -26,6 +27,7 @@ Das Dialogfeld *Snapshot-Gruppeneinstellungen* wird angezeigt.
 . Ändern Sie ggf. die Einstellungen für die Snapshot-Gruppe.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

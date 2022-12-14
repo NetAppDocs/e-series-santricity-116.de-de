@@ -14,6 +14,7 @@ summary: Sie können Statistiken für den SSD-Cache anzeigen, z. B. Lese-, Schre
 [role="lead"]
 Sie können Statistiken für den SSD-Cache anzeigen, z. B. Lese-, Schreib-, Cache-Treffer, Cache-Zuweisung in Prozent, Und Cache-Auslastung in Prozent.
 
+.Über diese Aufgabe
 ++++
 
 [NOTE]
@@ -33,6 +34,7 @@ Das Dialogfeld *View SSD Cache Statistics* wird angezeigt und zeigt die nominale
 
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

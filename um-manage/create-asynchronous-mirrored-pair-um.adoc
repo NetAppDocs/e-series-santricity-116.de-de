@@ -19,6 +19,7 @@ Zum Konfigurieren der asynchronen Spiegelung erstellen Sie ein gespiegeltes Paar
 Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
 
 ====
+.Bevor Sie beginnen
 Bevor Sie ein gespiegeltes Paar erstellen, erfüllen Sie die folgenden Anforderungen für Unified Manager:
 
 * Der Web Services Proxy-Dienst muss ausgeführt werden.
@@ -38,6 +39,7 @@ Erfüllen Sie außerdem die folgenden Anforderungen an Storage-Arrays:
 * Sie haben sowohl die primären als auch die sekundären Volumes erstellt, die Sie in der asynchronen Spiegelbeziehung verwenden möchten.
 
 
+.Über diese Aufgabe
 Der Prozess zum Erstellen eines asynchronen gespiegelten Paares ist ein mehrstufiges Verfahren.
 
 
@@ -50,6 +52,7 @@ Sie können eine neue Konsistenzgruppe für die Spiegelung erstellen oder eine v
 * Zum Erstellen einer neuen Konsistenzgruppe für Spiegelungen müssen die lokalen und Remote Storage Arrays in Unified Manager erkannt werden.
 
 
+.Über diese Aufgabe
 Eine gespiegelte Konsistenzgruppe ist ein Container für die primären und sekundären Volumes (das gespiegelte Paar) und gibt die gewünschte Resynchronisierung (manuell oder automatisch) für alle Paare in der Gruppe an.
 
 .Schritte
@@ -89,7 +92,7 @@ Wenn Ihr Remote-Speicher-Array passwortgeschützt ist, fordert das System zur Ei
 
 
 
-. Wählen Sie *Weiter* und gehen Sie zu  2: Select the primary volume.
+. Wählen Sie *Weiter* und gehen Sie zu <<Schritt 2: Wählen Sie das primäre Volumen>>.
 +
 Wenn Sie eine neue gespiegelte Konsistenzgruppe definiert haben, erstellt Unified Manager zuerst die gespiegelte Konsistenzgruppe im lokalen Storage Array und erstellt dann die gespiegelte Konsistenzgruppe im Remote-Storage-Array. Sie können die gespiegelte Konsistenzgruppe anzeigen und verwalten, indem Sie System Manager für jedes Array starten.
 
@@ -111,6 +114,7 @@ Wählen Sie das primäre Volume aus, das Sie für die Spiegelbeziehung verwenden
 * Sie müssen das primäre Volume auf dem lokalen Speicher-Array erstellt haben, das Sie in der asynchronen Spiegelbeziehung verwenden möchten.
 
 
+.Über diese Aufgabe
 Wenn Sie ein primäres Volume auf dem lokalen Speicher-Array auswählen, zeigt das System eine Liste aller berechtigten Volumes für dieses gespiegelte Paar an. Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt.
 
 Alle Volumes, die Sie der Spiegelungs-Consistency Group auf dem lokalen Speicher-Array hinzufügen, besitzen die primäre Rolle in der Spiegelbeziehung.
@@ -132,7 +136,7 @@ Beachten Sie folgende Richtlinien:
 
 
 
-. Wählen Sie *Weiter* und gehen Sie zu  3: Select the secondary volume.
+. Wählen Sie *Weiter* und gehen Sie zu <<Schritt 3: Wählen Sie das sekundäre Volumen>>.
 
 
 
@@ -146,6 +150,7 @@ Wählen Sie das sekundäre Volume aus, das Sie für die Spiegelbeziehung verwend
 * Das sekundäre Volume muss mindestens so groß sein wie das primäre Volume.
 
 
+.Über diese Aufgabe
 Wenn Sie ein sekundäres Volume auf dem Remote-Speicher-Array auswählen, zeigt das System eine Liste aller berechtigten Volumes für dieses gespiegelte Paar an. Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt.
 
 Alle Volumes, die Sie der Spiegelungs-Konsistenzgruppe auf dem Remote-Speicher-Array hinzufügen, übernehmen die sekundäre Rolle in der Spiegelbeziehung.
@@ -170,6 +175,7 @@ Beachten Sie folgende Richtlinien:
 . Wählen Sie *Fertig stellen*, um die asynchrone Spiegelsequenz abzuschließen.
 
 
+.Ergebnisse
 Unified Manager führt die folgenden Aktionen durch:
 
 * Startet die erste Synchronisierung zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array.

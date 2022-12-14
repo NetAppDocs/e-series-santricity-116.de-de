@@ -14,6 +14,7 @@ summary: 'Zur dynamischen Steigerung der Systemperformance können Sie die am h�
 [role="lead"]
 Zur dynamischen Beschleunigung der System-Performance können Sie die SSD Cache Funktion verwenden, um die am häufigsten abgerufenen Daten („heiße“ Daten) auf Solid State Drives (SSDs) mit niedrigerer Latenz zu zwischenspeichern. SSD Cache wird ausschließlich für Host-Lesevorgänge verwendet.
 
+.Bevor Sie beginnen
 Ihr Speicher-Array muss einige SSD-Laufwerke enthalten.
 
 [NOTE]
@@ -21,6 +22,7 @@ Ihr Speicher-Array muss einige SSD-Laufwerke enthalten.
 Der SSD-Cache ist auf dem EF600 Storage-System nicht verfügbar.
 
 ====
+.Über diese Aufgabe
 Wenn Sie SSD Cache erstellen, können Sie ein oder mehrere Laufwerke verwenden. Da sich der Lese-Cache im Storage Array befindet, wird das Caching von allen Applikationen genutzt, die das Storage Array verwenden. Sie wählen die Volumes aus, die zwischengespeichert werden sollen. Das Caching erfolgt dann automatisch und dynamisch.
 
 Beachten Sie bei der Erstellung von SSD Cache die folgenden Richtlinien.

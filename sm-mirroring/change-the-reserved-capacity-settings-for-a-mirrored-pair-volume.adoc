@@ -24,6 +24,7 @@ Das Dialogfeld *Mirrored Pair Volume Reserved Capacity Settings* wird angezeigt.
 . Ändern Sie gegebenenfalls die Einstellungen für die reservierte Kapazität des gespiegelten Paar-Volumes.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

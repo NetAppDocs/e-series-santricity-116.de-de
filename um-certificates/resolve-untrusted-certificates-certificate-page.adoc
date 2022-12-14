@@ -25,6 +25,7 @@ Nicht vertrauenswürdige Zertifikate treten auf, wenn ein Speicher-Array versuch
 
 
 
+.Über diese Aufgabe
 Möglicherweise müssen Sie zusätzliche vertrauenswürdige CA-Zertifikate installieren, wenn eine der folgenden Optionen zutrifft:
 
 * Sie haben kürzlich ein Speicher-Array hinzugefügt.

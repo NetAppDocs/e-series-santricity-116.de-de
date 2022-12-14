@@ -20,6 +20,7 @@ Wenn Sie sichere Laufwerke von einem Speicher-Array in ein anderes verschieben, 
 * Die Sicherheitsschlüsseldatei steht auf dem Management-Client zur Verfügung (das System mit einem Browser, der zum Zugriff auf System Manager verwendet wird). Wenn Sie die Laufwerke in ein Storage-Array verschieben, das von einem anderen System gemanagt wird, müssen Sie die Sicherheitsschlüsseldatei auf diesen Management-Client verschieben.
 
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie Daten in sicheren Laufwerken entsperrt werden, die von einem Speicher-Array entfernt und in einem anderen neu installiert wurden. Sobald das Array die Laufwerke erkannt hat, wird ein Zustand „Achtung erforderlich“ sowie der Status „Sicherheitsschlüssel erforderlich“ für diese neu gelegenen Laufwerke angezeigt. Sie können Laufwerkdaten entsperren, indem Sie ihren Sicherheitsschlüssel in das Storage-Array importieren. Während dieses Vorgangs wählen Sie die Sicherheitsschlüsseldatei aus und geben den Passphrase für den Schlüssel ein.
 
 [NOTE]
@@ -50,4 +51,5 @@ Wenn der Entsperrvorgang erfolgreich ist, wird im Dialogfeld „die zugeordneten
 
 
 
+.Ergebnisse
 Wenn alle Laufwerke gesperrt und dann entsperrt sind, wird jeder Controller im Speicher-Array neu gestartet. Wenn sich jedoch bereits einige nicht freigeschaltete Laufwerke im Ziel-Speicher-Array befinden, werden die Controller nicht neu gestartet.

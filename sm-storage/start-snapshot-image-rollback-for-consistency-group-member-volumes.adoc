@@ -20,6 +20,7 @@ Sie können einen Rollback-Vorgang durchführen, um den Inhalt der Snapshot Cons
 * Für das ausgewählte Volume wird kein Rollback durchgeführt.
 
 
+.Über diese Aufgabe
 Mit der Rollback-Startsequenz können Sie ein Rollback auf ein Snapshot-Image einer Snapshot-Consistency Group starten und gleichzeitig zusätzliche Speicherkapazität bereitstellen. Sie können nicht mehr als einen Rollback-Vorgang für eine Snapshot-Konsistenzgruppe gleichzeitig starten.
 
 [NOTE]
@@ -29,9 +30,9 @@ Der Host hat sofortigen Zugriff auf die neuen Rollback-Volumes, aber die vorhand
 ====
 Der Vorgang zum Starten des Rollbacks eines Snapshot-Images einer Snapshot-Consistency Group ist ein mehrstufiges Verfahren:
 
-*  1: Select members
-*  2: Review capacity
-*  3: Edit priority
+* <<Schritt 1: Mitglieder auswählen>>
+* <<Schritt 2: Kapazität überprüfen>>
+* <<Schritt 3: Priorität bearbeiten>>
 
 
 
@@ -51,8 +52,8 @@ Das Dialogfeld *Rollback starten* wird angezeigt.
 . Wählen Sie das Mitgliedsvolumen oder die Volumes aus.
 . Klicken Sie auf *Weiter*, und führen Sie einen der folgenden Schritte aus:
 +
-** Wenn einer der ausgewählten Mitgliedvolumes mehr als einem Objekt mit reservierter Kapazität zugeordnet ist, in dem Snapshot-Bilder gespeichert werden, wird das Dialogfeld *Kapazität überprüfen* angezeigt. Gehen Sie zu ,Schritt 2: Kapazität überprüfen.
-** Wenn keiner der ausgewählten Mitgliedsvolumes mehr als einem Objekt mit reservierter Kapazität zugeordnet ist, in dem Snapshot-Bilder gespeichert werden, wird das Dialogfeld *Priorität bearbeiten* angezeigt. Gehen Sie zu ,Schritt 3: Priorität bearbeiten.
+** Wenn einer der ausgewählten Mitgliedvolumes mehr als einem Objekt mit reservierter Kapazität zugeordnet ist, in dem Snapshot-Bilder gespeichert werden, wird das Dialogfeld *Kapazität überprüfen* angezeigt. Gehen Sie zu <<TASK_3CC5A20F26E44B9DBDDBCF422EDBBB4C,Schritt 2: Kapazität überprüfen>>.
+** Wenn keiner der ausgewählten Mitgliedsvolumes mehr als einem Objekt mit reservierter Kapazität zugeordnet ist, in dem Snapshot-Bilder gespeichert werden, wird das Dialogfeld *Priorität bearbeiten* angezeigt. Gehen Sie zu <<TASK_2C49B5B3933341D1BA737F00EBBC1698,Schritt 3: Priorität bearbeiten>>.
 
 
 
@@ -73,7 +74,7 @@ Das Dialogfeld *reservierte Kapazität erhöhen* wird angezeigt.
 +
 Wenn im Pool oder in der Volume-Gruppe keine freie Kapazität vorhanden ist, die das ausgewählte Speicherobjekt enthält und das Speicherarray nicht zugewiesene Kapazität hat, können Sie die Kapazität hinzufügen. Sie können einen neuen Pool oder eine neue Volume-Gruppe erstellen und diesen Vorgang mit der neuen freien Kapazität in diesem Pool oder dieser Volume-Gruppe wiederholen.
 
-. Klicken Sie auf *Weiter*, und gehen Sie zu ,Schritt 3: Priorität bearbeiten.
+. Klicken Sie auf *Weiter*, und gehen Sie zu <<TASK_2C49B5B3933341D1BA737F00EBBC1698,Schritt 3: Priorität bearbeiten>>.
 +
 Das Dialogfeld *Priorität bearbeiten* wird angezeigt.
 
@@ -86,6 +87,7 @@ Das Dialogfeld *Priorität bearbeiten* wird angezeigt.
 [role="lead"]
 Sie können bei Bedarf die Priorität des Rollback-Vorgangs bearbeiten.
 
+.Über diese Aufgabe
 Die Rollback-Priorität bestimmt, wie viele Systemressourcen auf Kosten der System-Performance für den Rollback-Vorgang reserviert sind.
 
 .Schritte
@@ -93,6 +95,7 @@ Die Rollback-Priorität bestimmt, wie viele Systemressourcen auf Kosten der Syst
 . Bestätigen Sie, dass Sie diesen Vorgang ausführen möchten, und klicken Sie dann auf *Fertig stellen*.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Stellt die Mitgliedsvolumes der Snapshot-Konsistenzgruppe mit dem auf dem ausgewählten Snapshot-Image gespeicherten Inhalt wieder her.

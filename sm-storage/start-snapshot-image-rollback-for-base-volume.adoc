@@ -20,6 +20,7 @@ Sie können einen Rollback-Vorgang durchführen, um den Inhalt eines Basisvolume
 * Für das ausgewählte Volume wird kein Rollback durchgeführt.
 
 
+.Über diese Aufgabe
 Mit der Rollback-Startsequenz können Sie ein Rollback auf einem Snapshot-Image eines Basis-Volumes durchführen und gleichzeitig zusätzliche Speicherkapazität bereitstellen. Sie können nicht mehr als einen Rollback-Vorgang für ein Basis-Volume gleichzeitig starten.
 
 [NOTE]
@@ -49,6 +50,7 @@ Wenn im Pool oder in der Volume-Gruppe keine freie Kapazität vorhanden ist, die
 . Bestätigen Sie, dass Sie diesen Vorgang ausführen möchten, und klicken Sie dann auf *Rollback*.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Stellt das Volume mit dem auf dem ausgewählten Snapshot-Image gespeicherten Inhalt wieder her.

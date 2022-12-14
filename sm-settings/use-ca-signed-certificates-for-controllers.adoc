@@ -18,6 +18,7 @@ Sie können Zertifikate von CA-signierte für die sichere Kommunikation zwischen
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
 
 
+.Über diese Aufgabe
 Die Verwendung von CA-signierten Zertifikaten ist ein dreistufiges Verfahren.
 
 
@@ -30,6 +31,7 @@ Sie müssen zuerst für jeden Controller im Speicher-Array eine CSR-Datei (Certi
 * Sie müssen die IP-Adresse oder den DNS-Namen jedes Controllers kennen.
 
 
+.Über diese Aufgabe
 Der CSR stellt Informationen über Ihre Organisation, die IP-Adresse oder den DNS-Namen des Controllers und ein Schlüsselpaar zur Verfügung, das den Webserver im Controller identifiziert. Während dieser Aufgabe wird eine CSR-Datei erzeugt, wenn es nur einen Controller im Speicher-Array und zwei CSR-Dateien gibt, wenn es zwei Controller gibt.
 
 [CAUTION]
@@ -80,7 +82,7 @@ Für einen einzelnen Controller wird eine CSR-Datei auf Ihr lokales System herun
 
 . Suchen Sie die heruntergeladenen CSR-Dateien. Der Speicherort des Ordners hängt vom Browser ab.
 . Senden Sie die CSR-Datei(en) an eine CA und fordern Sie signierte Zertifikate im PEM-Format an.
-. Warten Sie, bis die Zertifizierungsstelle die Zertifikate zurückgibt, und gehen Sie dann zu  2: Import signed certificates for controllers.
+. Warten Sie, bis die Zertifizierungsstelle die Zertifikate zurückgibt, und gehen Sie dann zu <<Schritt 2: Importieren Sie signierte Zertifikate für Controller>>.
 
 
 
@@ -95,6 +97,7 @@ Nachdem Sie signierte Zertifikate erhalten haben, importieren Sie die Dateien f�
 * Wenn die CA ein verkettetes Zertifikat (z. B. eine .p7b-Datei) lieferte, müssen Sie die verkettete Datei in einzelne Dateien entpacken: Das Stammzertifikat, ein oder mehrere Zwischenzertifikate und die Serverzertifikate, die die Controller identifizieren. Sie können die Windows verwenden `certmgr` Dienstprogramm zum Auspacken der Dateien (Rechtsklick und wählen Sie *menu:Alle Aufgaben[Export]*). Wenn die Exporte abgeschlossen sind, wird für jede Zertifikatdatei in der Kette eine CER-Datei angezeigt.
 
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie Sie die Zertifikatdateien hochladen.
 
 .Schritte
@@ -113,4 +116,5 @@ Die Datei(en) werden hochgeladen und validiert.
 
 
 
+.Ergebnisse
 Die Sitzung wird automatisch beendet. Sie müssen sich erneut anmelden, damit die Zertifikate wirksam werden. Wenn Sie sich erneut anmelden, wird das neue CA-signierte Zertifikat für Ihre Sitzung verwendet.

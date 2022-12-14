@@ -18,6 +18,7 @@ Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnungen der Benu
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
 
 
+.Über diese Aufgabe
 Die Benutzerprofile und Zuordnungen können nicht geändert werden. Es können nur Passwörter geändert werden.
 
 .Schritte

@@ -14,6 +14,7 @@ summary: Wenn Sie die externe Schlüsselverwaltung konfiguriert haben, können S
 [role="lead"]
 Wenn Sie die externe Schlüsselverwaltung konfiguriert haben, können Sie die Einstellungen des Verschlüsselungsmanagementservers jederzeit anzeigen und bearbeiten.
 
+.Bevor Sie beginnen
 Externes Verschlüsselungsmanagement muss konfiguriert werden.
 
 .Schritte

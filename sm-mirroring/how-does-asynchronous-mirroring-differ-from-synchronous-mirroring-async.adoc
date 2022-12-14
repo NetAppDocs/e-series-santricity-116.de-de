@@ -18,6 +18,7 @@ Bei der synchronen Spiegelung wird der Status des primären Volume nicht zu eine
 Bei der asynchronen Spiegelung ist das Remote-Storage-Array nicht vollständig mit dem lokalen Storage-Array synchronisiert. Falls die Applikation aufgrund eines Verlusts des lokalen Storage-Arrays zum Remote Storage-Array wechseln muss, können einige Transaktionen verloren gehen.
 
 .Vergleich der Spiegelungsfunktionen
+[%collapsible]
 ====
 [cols="3a,3a"]
 |===

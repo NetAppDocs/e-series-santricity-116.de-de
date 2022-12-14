@@ -50,4 +50,5 @@ Nach dem Klicken auf *Hinzufügen* wird das Dialogfeld *Syslog Server konfigurie
 . Um die Serververbindung mit dem Speicher-Array zu testen, wählen Sie *Alle testen*.
 
 
+.Ergebnisse
 Nach der Konfiguration werden alle neuen Audit-Protokolle an den Syslog-Server gesendet. Frühere Protokolle werden nicht übertragen.

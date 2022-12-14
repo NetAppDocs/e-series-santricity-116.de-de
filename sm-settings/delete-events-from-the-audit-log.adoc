@@ -18,6 +18,7 @@ Sie können das Audit-Protokoll von alten Ereignissen löschen, wodurch das Such
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
 
 
+.Über diese Aufgabe
 Diese Aufgabe beschreibt, wie alte Ereignisse aus dem Prüfprotokoll entfernt werden.
 
 .Schritte

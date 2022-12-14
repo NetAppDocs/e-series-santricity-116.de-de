@@ -14,6 +14,7 @@ summary: Sie können Protokolldaten von allen Laufwerken in Ihrem Speicher-Array
 [role="lead"]
 Sie können Protokolldaten von allen Laufwerken in Ihrem Speicher-Array erfassen und die Datei zur Analyse an den technischen Support senden.
 
+.Über diese Aufgabe
 Protokolldaten bestehen aus statistischen Informationen, die von jedem der Laufwerke in Ihrem Speicher-Array verwaltet werden. Der technische Support kann diese Informationen nutzen, um die Performance Ihrer Laufwerke zu analysieren und um eventuell vorhandene Probleme zu beheben.
 
 [NOTE]

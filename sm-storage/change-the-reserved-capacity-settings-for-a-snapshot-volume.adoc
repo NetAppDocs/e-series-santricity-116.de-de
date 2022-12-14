@@ -24,6 +24,7 @@ Das Dialogfeld *Snapshot Volume reservierte Kapazitätseinstellungen* wird angez
 . Ändern Sie die Einstellungen für die reservierte Kapazität des Snapshot-Volumes je nach Bedarf.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

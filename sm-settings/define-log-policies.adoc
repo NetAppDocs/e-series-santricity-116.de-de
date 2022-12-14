@@ -18,6 +18,7 @@ Sie können die Überschreibungsrichtlinie und die im Audit-Protokoll aufgezeich
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
 
 
+.Über diese Aufgabe
 Dieser Task beschreibt, wie die Einstellungen für das Überwachungsprotokoll geändert werden, einschließlich der Richtlinie zum Überschreiben alter Ereignisse und der Richtlinie für die Aufzeichnung von Ereignistypen.
 
 .Schritte
@@ -30,6 +31,7 @@ Das Dialogfeld *Audit Log Settings* wird geöffnet.
 . Ändern Sie die Überschreibungsrichtlinie oder die Arten der aufgezeichneten Ereignisse.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

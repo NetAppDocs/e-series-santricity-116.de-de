@@ -14,6 +14,7 @@ summary: Sie aktualisieren die IP-Adresse Ihres Remote-Speicher-Arrays, wenn sic
 Sie aktualisieren die IP-Adresse des Remote-Speicher-Arrays, wenn sich die IP-Adresse eines iSCSI-Ports ändert und das lokale Speicher-Array nicht mit dem Remote-Speicher-Array kommunizieren kann.
 
 .Weitere Informationen zur Remote-IP-Adresse
+[%collapsible]
 ====
 Beim Einrichten einer asynchronen Spiegelbeziehung mit einer iSCSI-Verbindung speichern sowohl die lokalen als auch die Remote-Speicher-Arrays einen Datensatz der IP-Adresse des Remote-Speicher-Arrays in der Konfiguration zur asynchronen Spiegelung. Wenn sich die IP-Adresse eines iSCSI-Ports ändert, tritt auf dem Remote-Speicher-Array, das versucht, diesen Port zu verwenden, ein Kommunikationsfehler auf.
 

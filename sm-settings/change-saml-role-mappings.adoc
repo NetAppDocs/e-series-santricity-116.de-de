@@ -36,6 +36,7 @@ Achten Sie darauf, dass Sie Ihre Berechtigungen nicht entfernen, während SAML a
 ====
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===
@@ -85,4 +86,5 @@ Die Überwachungsrolle ist für alle Benutzer, einschließlich des Administrator
 . Klicken Sie Auf *Speichern*.
 
 
+.Ergebnisse
 Nach Abschluss dieser Aufgabe werden alle aktiven Benutzersitzungen beendet. Nur Ihre aktuelle Benutzersitzung bleibt erhalten.

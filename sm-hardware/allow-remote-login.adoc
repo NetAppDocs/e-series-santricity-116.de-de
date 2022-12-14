@@ -31,4 +31,5 @@ Das Kontextmenü des Controllers wird angezeigt.
 . Wählen Sie *Remote-Anmeldung ändern*, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
 
 
+.Ergebnisse
 Nachdem die Fehlerbehebung durch den technischen Support abgeschlossen ist, führen Sie dasselbe Verfahren aus, um die Remote-Anmeldung zu deaktivieren. Wenn Sie die Remote-Anmeldung deaktivieren, werden alle aktuellen SSH-Sitzungen beendet und neue Anmeldeanfragen werden abgelehnt.

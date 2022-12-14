@@ -14,6 +14,7 @@ summary: Sie können Community-Namen für SNMP-Traps bearbeiten und einen andere
 [role="lead"]
 Sie können Community-Namen für SNMP-Traps bearbeiten und einen anderen Community-Namen einem SNMP-Trap-Ziel zuordnen.
 
+.Bevor Sie beginnen
 Es muss ein Community-Name erstellt werden, der nur aus druckbaren ASCII-Zeichen besteht. Der Community-Name, ein String, der wie ein Kennwort für die Netzwerkserver fungiert, wird von einem Netzwerkadministrator erstellt.
 
 .Schritte
@@ -36,4 +37,5 @@ Wenn Sie die Änderungen abbrechen möchten, wählen Sie das Symbol *Abbrechen* 
 
 
 
+.Ergebnisse
 Die Registerkarte *SNMP* der Seite *Alerts* zeigt die aktualisierten Communities an.

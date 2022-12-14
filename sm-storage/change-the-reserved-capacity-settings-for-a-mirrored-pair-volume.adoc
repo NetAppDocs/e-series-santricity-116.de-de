@@ -24,6 +24,7 @@ Das Dialogfeld *Mirrored Pair Volume Reserved Capacity Settings* wird angezeigt.
 . Ändern Sie gegebenenfalls die Einstellungen für die reservierte Kapazität des gespiegelten Paar-Volumes.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===
@@ -56,4 +57,5 @@ Sie können eine der folgenden Richtlinien auswählen:
 . Klicken Sie auf *Speichern*, um Ihre Änderungen anzuwenden.
 
 
+.Ergebnis
 System Manager ändert die Einstellungen für die reservierte Kapazität des Mitglieds-Volumes sowie die Einstellungen für die reservierte Kapazität aller Mitglied-Volumes in der Konsistenzgruppe.

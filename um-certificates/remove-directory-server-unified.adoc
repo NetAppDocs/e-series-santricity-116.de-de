@@ -17,6 +17,7 @@ Um die Verbindung zwischen einem Verzeichnisserver und dem Web Services Proxy zu
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
 
 
+.Über diese Aufgabe
 Nach Abschluss dieser Aufgabe werden alle aktiven Benutzersitzungen beendet. Nur Ihre aktuelle Benutzersitzung bleibt erhalten.
 
 .Schritte

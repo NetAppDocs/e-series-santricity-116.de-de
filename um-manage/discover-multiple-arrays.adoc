@@ -13,6 +13,7 @@ summary: Sie erkennen mehrere Arrays, um alle Speicher-Arrays im Subnetz zu erke
 [role="lead"]
 Sie erkennen mehrere Arrays, um alle Speicher-Arrays im Subnetz zu erkennen, in dem sich der Verwaltungsserver befindet, und um automatisch die ermittelten Arrays zu Ihrer Verwaltungsdomäne hinzuzufügen.
 
+.Über diese Aufgabe
 Führen Sie die folgenden Schritte aus, um mehrere Arrays zu erkennen.
 
 
@@ -21,6 +22,7 @@ Führen Sie die folgenden Schritte aus, um mehrere Arrays zu erkennen.
 
 Sie geben einen Netzwerkaddress Range ein, um im lokalen Subnetzwerk zu suchen. Jedes erfolgreich erreichte Speicher-Array wird auf der Seite *Discover* angezeigt und kann Ihrer Management-Domäne hinzugefügt werden.
 
+.Über diese Aufgabe
 Wenn Sie den Ermittlungsvorgang aus irgendeinem Grund beenden möchten, klicken Sie auf *Erkennung stoppen*.
 
 .Schritte
@@ -45,7 +47,7 @@ Wenn keine verwaltbaren Arrays erkannt werden, überprüfen Sie, ob die Speicher
 SANtricity Unified Manager führt für jedes Array, das Sie der Management-Domäne hinzufügen, eine Überprüfung der Anmeldeinformationen durch. Möglicherweise müssen Sie alle selbstsignierten Zertifikate und nicht vertrauenswürdigen Zertifikate, die mit diesem Array verknüpft sind, auflösen.
 
 . Klicken Sie auf *Weiter*, um mit dem nächsten Schritt im Assistenten fortzufahren.
-. Gehen Sie zu  2: Resolve self-signed certificates during discovery.
+. Gehen Sie zu <<Schritt 2: Lösen Sie selbst signierte Zertifikate während der Ermittlung>>.
 
 
 
@@ -66,7 +68,7 @@ Während der Bestandsaufnahme überprüft das System, ob die Speicher-Arrays Zer
 
 
 . Klicken Sie auf *Weiter*, um mit dem nächsten Schritt im Assistenten fortzufahren.
-. Gehen Sie zu  3: Resolve untrusted certificates during discovery.
+. Gehen Sie zu <<Schritt 3: Lösen Sie nicht vertrauenswürdige Zertifikate während der Ermittlung>>.
 
 
 
@@ -82,6 +84,7 @@ Nicht vertrauenswürdige Zertifikate treten auf, wenn ein Speicher-Array versuch
 * Die Zertifikatdateien sind auf Ihrem lokalen System verfügbar.
 
 
+.Über diese Aufgabe
 Möglicherweise müssen Sie zusätzliche vertrauenswürdige CA-Zertifikate installieren, wenn eine der folgenden Optionen zutrifft:
 
 * Sie haben kürzlich ein Speicher-Array hinzugefügt.
@@ -110,7 +113,7 @@ Jedes Speicherarray mit nicht vertrauenswürdigen Zertifikatproblemen, die nicht
 
 ====
 . Klicken Sie auf *Weiter*, um mit dem nächsten Schritt im Assistenten fortzufahren.
-. Gehen Sie zu  4: Provide passwords.
+. Gehen Sie zu <<Schritt 4: Geben Sie Passwörter ein>>.
 
 
 
@@ -130,6 +133,7 @@ Sie müssen die Passwörter für die Speicher-Arrays eingeben, die Sie Ihrer Man
 . Klicken Sie Auf *Fertig Stellen*.
 
 
+.Nachdem Sie fertig sind
 Die Speicher-Arrays werden Ihrer Management-Domäne hinzugefügt und der ausgewählten Gruppe zugeordnet (falls angegeben).
 
 [NOTE]

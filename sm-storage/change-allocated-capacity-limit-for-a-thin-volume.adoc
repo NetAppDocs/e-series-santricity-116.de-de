@@ -24,6 +24,7 @@ SANtricity System Manager bietet keine Option zum Erstellen von Thin Volumes. We
 Diese Funktion ist auf dem EF600 Storage-System nicht verfügbar.
 
 ====
+.Über diese Aufgabe
 System Manager erweitert die zugewiesene Kapazität automatisch auf Basis der zugewiesenen Kapazitätsgrenze. Die zugewiesene Kapazitätsgrenze ermöglicht es Ihnen, das automatische Wachstum des Thin Volumes unter der gemeldeten Kapazität zu begrenzen. Wenn die geschriebene Datenmenge sich in der Nähe der zugewiesenen Kapazität befindet, können Sie das zugewiesene Kapazitätslimit ändern.
 
 Wenn Sie die zugewiesene Kapazitätsgrenze und der Warnschwellenwert eines Thin Volume ändern, müssen Sie den Speicherplatz berücksichtigen, der von den Benutzerdaten des Volumes und den Kopierdienstdaten verbraucht wird.
@@ -41,6 +42,7 @@ Das Dialogfeld *Limit ändern* wird angezeigt. Die Einstellung für Kapazitätsg
 . Ändern Sie die zugewiesene Kapazitätsgrenze und den Warnungsschwellenwert nach Bedarf.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

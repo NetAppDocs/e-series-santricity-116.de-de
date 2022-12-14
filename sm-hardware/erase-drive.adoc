@@ -13,8 +13,10 @@ summary: Sie können ein sicheres Laufwerk löschen, sodass es in einer anderen 
 [role="lead"]
 Sie können ein sicheres Laufwerk löschen, sodass es in einer anderen Volume-Gruppe, einem Pool, SSD-Cache oder in einem anderen Storage-Array wiederverwendet werden kann. Durch dieses Verfahren werden die Sicherheitsattribute des Laufwerks zurückgesetzt und sichergestellt, dass die Daten nicht erneut gelesen werden können.
 
+.Bevor Sie beginnen
 Das Secure-Enabled-Laufwerk muss sich im Status Unassigned befinden.
 
+.Über diese Aufgabe
 Verwenden Sie die Option Secure Erase nur, wenn Sie alle Daten auf einem sicheren Laufwerk entfernen und die Sicherheitsattribute des Laufwerks zurücksetzen möchten.
 
 [CAUTION]
@@ -61,4 +63,5 @@ Für NVMe-SED-Laufwerke müssen Sie die PSID angeben. Die PSID finden Sie auf de
 . Bestätigen Sie den Vorgang, und klicken Sie dann auf *Löschen*.
 
 
+.Ergebnisse
 Das Laufwerk kann nun in einer anderen Volume-Gruppe oder einem anderen Laufwerk-Pool oder in einem anderen Speicher-Array verwendet werden.

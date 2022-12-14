@@ -17,6 +17,7 @@ Sie können CA-signierte Zertifikate für den sicheren Zugriff auf das Verwaltun
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
 
 
+.Über diese Aufgabe
 Die Verwendung von CA-signierten Zertifikaten ist ein zweistufiges Verfahren.
 
 
@@ -29,6 +30,7 @@ Sie müssen zuerst eine CSR-Datei (Certificate Signing Request) generieren und s
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
 
 
+.Über diese Aufgabe
 Diese Aufgabe beschreibt, wie Sie die CSR-Datei generieren, die Sie an eine CA senden, um signierte, Management-Zertifikate für das System zu erhalten, das Unified Manager hostet, und den Web Services Proxy. Sie müssen Informationen über Ihr Unternehmen sowie die IP-Adresse oder den DNS-Namen des Hostsystems angeben.
 
 [CAUTION]
@@ -62,6 +64,7 @@ Eine CSR-Datei wird auf Ihr lokales System heruntergeladen. Der Speicherort des 
 . Senden Sie die CSR-Datei an eine CA und fordern Sie signierte Zertifikate im PEM- oder DER-Format an.
 
 
+.Nachdem Sie fertig sind
 Warten Sie, bis die CA die Zertifikatdateien zurückgibt, und gehen Sie dann zu link:step-3-import-management-certificates-unified.html["Schritt 2: Import Management Zertifikate"].
 
 
@@ -91,4 +94,5 @@ Die Dateinamen werden im Dialogfeld angezeigt.
 . Klicken Sie Auf *Import*.
 
 
+.Ergebnisse
 Die Dateien werden hochgeladen und validiert. Die Zertifikatinformationen werden auf der Seite Zertifikatverwaltung angezeigt.

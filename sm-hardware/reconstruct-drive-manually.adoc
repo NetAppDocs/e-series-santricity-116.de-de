@@ -13,6 +13,7 @@ summary: Die Laufwerksrekonstruktion wird normalerweise automatisch gestartet, n
 [role="lead"]
 Die Laufwerksrekonstruktion wird normalerweise automatisch gestartet, nachdem Sie ein Laufwerk ersetzt haben. Wenn die Datenrekonstruktion nicht automatisch gestartet wird, können Sie die Rekonstruktion manuell starten.
 
+.Über diese Aufgabe
 ++++
 
 [NOTE]

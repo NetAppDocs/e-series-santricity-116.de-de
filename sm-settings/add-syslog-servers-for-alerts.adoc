@@ -41,4 +41,5 @@ Sie können bis zu fünf Syslog-Server konfigurieren.
 ====
 
 
+.Ergebnisse
 Die Syslog-Server-Adressen werden in der Tabelle angezeigt.

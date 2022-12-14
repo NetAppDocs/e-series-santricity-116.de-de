@@ -26,6 +26,7 @@ Wenn sowohl FDE- als auch FIPS-Laufwerke im Storage Array installiert werden, nu
 * Die Client- und Server-Zertifikate sind auf Ihrem lokalen Host verfügbar, sodass sich das Storage-Array und der Schlüsselverwaltungsserver gegenseitig authentifizieren können. Das Clientzertifikat validiert die Controller, während das Serverzertifikat den Schlüsselverwaltungsserver validiert.
 
 
+.Über diese Aufgabe
 In dieser Aufgabe definieren Sie die IP-Adresse des Schlüsselverwaltungsservers und die verwendete Portnummer und laden dann Zertifikate für die externe Schlüsselverwaltung.
 
 .Schritte
@@ -89,6 +90,7 @@ Die Testergebnisse werden im Dialogfeld angezeigt.
 
 
 
+.Ergebnisse
 Wenn das externe Verschlüsselungsmanagement aktiviert ist, können Sie sicher aktivierte Volume-Gruppen oder -Pools erstellen oder die Sicherheit für vorhandene Volume-Gruppen und -Pools aktivieren.
 
 [NOTE]

@@ -19,6 +19,7 @@ Wenn Sie ein oder mehrere gesperrte NVMe-Laufwerke in ein Storage-Array einfüge
 * Für die Option Zurücksetzen müssen Sie die PSID auf jedem Laufwerk finden, das Sie zurücksetzen möchten. Um die PSID zu finden, entfernen Sie das Laufwerk physisch und suchen Sie die PSID-Zeichenfolge (maximal 32 Zeichen) auf dem Laufwerketikett, und installieren Sie dann das Laufwerk neu.
 
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie Daten auf NVMe-Laufwerken durch den Import einer Sicherheitsschlüsseldatei in das Storage-Array entsperrt werden. In Fällen, in denen der Sicherheitsschlüssel nicht verfügbar ist, beschreibt diese Aufgabe auch, wie ein Reset auf einem gesperrten Laufwerk durchgeführt wird.
 
 [NOTE]
@@ -57,4 +58,5 @@ Für einen Vorgang zum Entsperren muss dieser Vorgang nur einmal ausgeführt wer
 
 
 
+.Ergebnisse
 Das NVMe-Laufwerk kann nun in einer anderen Volume-Gruppe oder einem anderen Festplatten-Pool oder in einem anderen Storage-Array verwendet werden.

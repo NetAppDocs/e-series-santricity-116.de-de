@@ -14,8 +14,10 @@ summary: Sie können jederzeit einen Sicherheitsschlüssel durch einen neuen Sch
 [role="lead"]
 Sie können jederzeit einen Sicherheitsschlüssel durch einen neuen Schlüssel ersetzen. Möglicherweise müssen Sie einen Sicherheitsschlüssel ändern, wenn Ihr Unternehmen eine potenzielle Sicherheitsverletzung hat und sicherstellen möchte, dass nicht autorisierte Mitarbeiter nicht auf die Daten der Laufwerke zugreifen können.
 
+.Bevor Sie beginnen
 Ein Sicherheitsschlüssel ist bereits vorhanden.
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie ein Sicherheitsschlüssel geändert und durch einen neuen ersetzt wird. Nach diesem Vorgang wird der alte Schlüssel nicht validiert.
 
 .Schritte
@@ -61,4 +63,5 @@ Der Pfad für die heruntergeladene Datei hängt möglicherweise vom Standard-Dow
 . Notieren Sie sich die Schlüsselkennung, den Passphrase und den Speicherort der heruntergeladenen Schlüsseldatei, und klicken Sie dann auf *Schließen*.
 
 
+.Nachdem Sie fertig sind
 Sie sollten den Sicherheitsschlüssel überprüfen, um sicherzustellen, dass die Schlüsseldatei nicht beschädigt ist.

@@ -36,6 +36,7 @@ Die Aktivität des Überwachungsprotokolls wird im Tabellenformat angezeigt, das
 . Verwenden Sie die Auswahl auf der Seite „Überwachungsprotokoll“, um Ereignisse anzuzeigen und zu verwalten.
 +
 .Auswahldetails
+[%collapsible]
 ====
 [cols="1a,3a"]
 |===

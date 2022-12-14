@@ -18,6 +18,7 @@ Für die sichere Kommunikation zwischen einem Schlüsselverwaltungsserver und de
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
 
 
+.Über diese Aufgabe
 Die Authentifizierung zwischen den Controllern und einem Schlüsselverwaltungsserver ist ein zweistufiges Verfahren.
 
 
@@ -30,6 +31,7 @@ Sie müssen zuerst eine CSR-Datei (Certificate Signing Request) generieren und d
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
 
 
+.Über diese Aufgabe
 Diese Aufgabe beschreibt, wie Sie die CSR-Datei generieren, die Sie dann verwenden, um ein signiertes Client-Zertifikat von einer CA anzufordern, die vom Schlüsselverwaltungsserver vertrauenswürdig ist. Ein Client-Zertifikat validiert die Controller des Storage-Arrays, damit der wichtige Management-Server seine KMIP-Anforderungen (Key Management Interoperability Protocol) anvertrauen kann. Während dieser Aufgabe müssen Sie Informationen über Ihr Unternehmen angeben.
 
 .Schritte
@@ -50,7 +52,7 @@ Diese Aufgabe beschreibt, wie Sie die CSR-Datei generieren, die Sie dann verwend
 Eine CSR-Datei wird auf Ihrem lokalen System gespeichert.
 
 . Fordern Sie ein signiertes Clientzertifikat von einer Zertifizierungsstelle an, die vom Schlüsselverwaltungsserver vertrauenswürdig ist.
-. Wenn Sie ein Clientzertifikat besitzen, gehen Sie zu  2: Import certificates for the key management server.
+. Wenn Sie ein Clientzertifikat besitzen, gehen Sie zu <<Schritt 2: Importieren Sie Zertifikate für den Schlüsselverwaltungsserver>>.
 
 
 
@@ -61,7 +63,7 @@ Im nächsten Schritt importieren Sie Zertifikate zur Authentifizierung zwischen 
 
 .Bevor Sie beginnen
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
-* Sie haben eine signierte Client-Zertifikatdatei (siehe  1: Complete and submit CSR for authentication with a key management server), und Sie haben diese Datei auf den Host kopiert, auf den Sie auf System Manager zugreifen. Ein Client-Zertifikat validiert die Controller des Storage-Arrays, damit der wichtige Management-Server seine KMIP-Anforderungen (Key Management Interoperability Protocol) anvertrauen kann.
+* Sie haben eine signierte Client-Zertifikatdatei (siehe <<Schritt 1: CSR für die Authentifizierung mit einem Schlüsselverwaltungsserver abschließen und einreichen>>), und Sie haben diese Datei auf den Host kopiert, auf den Sie auf System Manager zugreifen. Ein Client-Zertifikat validiert die Controller des Storage-Arrays, damit der wichtige Management-Server seine KMIP-Anforderungen (Key Management Interoperability Protocol) anvertrauen kann.
 * Sie müssen die Serverzertifikatdatei vom Schlüsselverwaltungsserver abrufen und diese Datei anschließend auf den Host kopieren, auf dem Sie auf System Manager zugreifen. Ein Zertifikat für den Schlüsselmanagementserver validiert den Schlüsselmanagementserver, damit das Storage-Array seiner IP-Adresse vertrauen kann.
 +
 [NOTE]
@@ -71,6 +73,7 @@ Weitere Informationen zum Serverzertifikat finden Sie in der Dokumentation für 
 ====
 
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie Zertifikatdateien für die Authentifizierung zwischen den Speicher-Array-Controllern und dem Schlüsselverwaltungsserver hochgeladen werden. Sie müssen sowohl die Client-Zertifikatdatei für die Controller als auch die Serverzertifikatdatei für den Schlüsselverwaltungsserver laden.
 
 .Schritte
