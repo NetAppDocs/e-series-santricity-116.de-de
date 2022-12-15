@@ -10634,7 +10634,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 19:46:08 +0000">11/15/2022</time>
+    <time datetime="2022-12-15 15:15:39 +0000">12/15/2022</time>
     
   
 
@@ -10650,6 +10650,7 @@
 <p>Zum Konfigurieren der Authentifizierung für das Zugriffsmanagement können Sie die im Speicher-Array integrierten SAML-Funktionen (Security Assertion Markup Language) verwenden. Mit dieser Konfiguration wird eine Verbindung zwischen einem Identitätsanbieter und dem Speicheranbieter hergestellt.</p>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Ein Identitäts-Provider (IdP) ist ein externes System, mit dem Anmeldeinformationen von einem Benutzer angefordert und festgestellt werden können, ob dieser Benutzer erfolgreich authentifiziert wurde. Der IdP kann so konfiguriert werden, dass er Multi-Faktor-Authentifizierung bietet und eine beliebige Benutzerdatenbank, wie z. B. Active Directory, verwendet. Ihr Sicherheitsteam ist für die Instandhaltung des IdP verantwortlich. Ein Service-Provider (SP) ist ein System, das die Benutzerauthentifizierung und den Zugriff steuert. Wenn Access Management mit SAML konfiguriert ist, fungiert das Storage-Array als Dienstanbieter für die Anforderung der Authentifizierung vom Identity Provider. Um eine Verbindung zwischen dem IdP und dem Storage-Array herzustellen, teilen Sie Metadatendateien zwischen diesen beiden Einheiten gemeinsam. Als Nächstes ordnen Sie die IdP-Benutzereinheiten den Storage-Array-Rollen zu. Und schließlich testen Sie die Verbindung und SSO-Anmeldedaten, bevor Sie SAML aktivieren.</p>
 </div>
 <div class="admonitionblock note">
@@ -10712,6 +10713,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>In dieser Aufgabe laden Sie eine Metadatendatei aus dem IdP in den System Manager hoch. Das IdP-System benötigt diese Metadaten, um Authentifizierungsanforderungen an die richtige URL weiterzuleiten und die erhaltenen Antworten zu validieren. Sie müssen nur eine Metadatendatei für das Storage-Array hochladen, selbst wenn es zwei Controller gibt.</p>
 </div>
 <div class="olist arabic">
@@ -10760,6 +10762,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>In dieser Aufgabe exportieren Sie Metadaten aus den Controllern (eine Datei für jeden Controller). Die IdP benötigt diese Metadaten, um eine Vertrauensbeziehung zu den Controllern aufzubauen und Autorisierungsanforderungen zu bearbeiten. Die Datei enthält Informationen wie den Domänennamen oder die IP-Adresse des Controllers, sodass das IdP mit den Service-Providern kommunizieren kann.</p>
 </div>
 <div class="olist arabic">
@@ -10811,6 +10814,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>In dieser Aufgabe verwenden Sie System Manager, um IdP-Gruppen den lokalen Benutzerrollen zuzuordnen.</p>
 </div>
 <div class="olist arabic">
@@ -10824,8 +10828,8 @@
 </li>
 <li>
 <p>Weisen Sie den vordefinierten Rollen IdP-Benutzerattribute und -Gruppen zu. Einer Gruppe können mehrere Rollen zugewiesen sein.</p>
-<div class="exampleblock">
-<div class="title">Beispiel 1. Felddetails</div>
+<details>
+<summary class="title">Felddetails</summary>
 <div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -10866,7 +10870,7 @@
 </tbody>
 </table>
 </div>
-</div>
+</details>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -10982,6 +10986,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>In dieser Aufgabe wird beschrieben, wie die SAML-Konfiguration für die Benutzerauthentifizierung abgeschlossen wird. Während dieses Prozesses werden Sie vom System auch aufgefordert, eine SSO-Anmeldung zu testen. Der SSO-Anmelde-Test wird im vorherigen Schritt beschrieben.</p>
 </div>
 <div class="admonitionblock note">
@@ -11016,6 +11021,7 @@
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Ergebnisse</div>
 <p>Nachdem das System SAML aktiviert hat, werden alle aktiven Sitzungen beendet und die Authentifizierung von Benutzern über SAML beginnt.</p>
 </div>
 </div>
